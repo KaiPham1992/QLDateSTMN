@@ -6,6 +6,7 @@ def main_pods
   pod 'SwiftyJSON'
   pod 'Alamofire'
   pod 'ObjectMapper'
+  pod 'BarcodeScanner'
 end
 
 target 'BaseIOS2018' do

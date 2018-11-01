@@ -7,6 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		018560A9218B2AE0006460B9 /* TabbarMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018560A8218B2AE0006460B9 /* TabbarMainViewController.swift */; };
+		018560AB218B2B17006460B9 /* AppImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018560AA218B2B17006460B9 /* AppImage.swift */; };
+		018560C0218B2EA8006460B9 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018560BA218B2EA8006460B9 /* HomePresenter.swift */; };
+		018560C1218B2EA8006460B9 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018560BB218B2EA8006460B9 /* HomeRouter.swift */; };
+		018560C2218B2EA8006460B9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018560BC218B2EA8006460B9 /* HomeViewController.swift */; };
+		018560C3218B2EA8006460B9 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018560BD218B2EA8006460B9 /* HomeProtocols.swift */; };
+		018560C4218B2EA8006460B9 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018560BE218B2EA8006460B9 /* HomeInteractor.swift */; };
+		018560C5218B2EA8006460B9 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 018560BF218B2EA8006460B9 /* HomeViewController.xib */; };
+		018560DB218B2F77006460B9 /* DetailProductPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018560D5218B2F77006460B9 /* DetailProductPresenter.swift */; };
+		018560DC218B2F77006460B9 /* DetailProductRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018560D6218B2F77006460B9 /* DetailProductRouter.swift */; };
+		018560DD218B2F77006460B9 /* DetailProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018560D7218B2F77006460B9 /* DetailProductViewController.swift */; };
+		018560DE218B2F77006460B9 /* DetailProductProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018560D8218B2F77006460B9 /* DetailProductProtocols.swift */; };
+		018560DF218B2F77006460B9 /* DetailProductInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018560D9218B2F77006460B9 /* DetailProductInteractor.swift */; };
+		018560E0218B2F77006460B9 /* DetailProductViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 018560DA218B2F77006460B9 /* DetailProductViewController.xib */; };
+		018560E7218B2F8B006460B9 /* AddProductPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018560E1218B2F8B006460B9 /* AddProductPresenter.swift */; };
+		018560E8218B2F8B006460B9 /* AddProductRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018560E2218B2F8B006460B9 /* AddProductRouter.swift */; };
+		018560E9218B2F8B006460B9 /* AddProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018560E3218B2F8B006460B9 /* AddProductViewController.swift */; };
+		018560EA218B2F8B006460B9 /* AddProductProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018560E4218B2F8B006460B9 /* AddProductProtocols.swift */; };
+		018560EB218B2F8B006460B9 /* AddProductInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018560E5218B2F8B006460B9 /* AddProductInteractor.swift */; };
+		018560EC218B2F8B006460B9 /* AddProductViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 018560E6218B2F8B006460B9 /* AddProductViewController.xib */; };
+		018560EF218B30FB006460B9 /* BaseTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018560EE218B30FB006460B9 /* BaseTableCell.swift */; };
+		018560F1218B3125006460B9 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018560F0218B3125006460B9 /* AppColor.swift */; };
+		018560F4218B3173006460B9 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018560F2218B3173006460B9 /* ProductCell.swift */; };
+		018560F5218B3173006460B9 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 018560F3218B3173006460B9 /* ProductCell.xib */; };
 		01CA07CF2170437E005B1BC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CA07CE2170437E005B1BC9 /* AppDelegate.swift */; };
 		01CA07D621704382005B1BC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01CA07D521704382005B1BC9 /* Assets.xcassets */; };
 		01CA07D921704382005B1BC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01CA07D721704382005B1BC9 /* LaunchScreen.storyboard */; };
@@ -42,6 +66,30 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		018560A8218B2AE0006460B9 /* TabbarMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarMainViewController.swift; sourceTree = "<group>"; };
+		018560AA218B2B17006460B9 /* AppImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImage.swift; sourceTree = "<group>"; };
+		018560BA218B2EA8006460B9 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		018560BB218B2EA8006460B9 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		018560BC218B2EA8006460B9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		018560BD218B2EA8006460B9 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
+		018560BE218B2EA8006460B9 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		018560BF218B2EA8006460B9 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		018560D5218B2F77006460B9 /* DetailProductPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProductPresenter.swift; sourceTree = "<group>"; };
+		018560D6218B2F77006460B9 /* DetailProductRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProductRouter.swift; sourceTree = "<group>"; };
+		018560D7218B2F77006460B9 /* DetailProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProductViewController.swift; sourceTree = "<group>"; };
+		018560D8218B2F77006460B9 /* DetailProductProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProductProtocols.swift; sourceTree = "<group>"; };
+		018560D9218B2F77006460B9 /* DetailProductInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProductInteractor.swift; sourceTree = "<group>"; };
+		018560DA218B2F77006460B9 /* DetailProductViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailProductViewController.xib; sourceTree = "<group>"; };
+		018560E1218B2F8B006460B9 /* AddProductPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductPresenter.swift; sourceTree = "<group>"; };
+		018560E2218B2F8B006460B9 /* AddProductRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductRouter.swift; sourceTree = "<group>"; };
+		018560E3218B2F8B006460B9 /* AddProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductViewController.swift; sourceTree = "<group>"; };
+		018560E4218B2F8B006460B9 /* AddProductProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductProtocols.swift; sourceTree = "<group>"; };
+		018560E5218B2F8B006460B9 /* AddProductInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductInteractor.swift; sourceTree = "<group>"; };
+		018560E6218B2F8B006460B9 /* AddProductViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddProductViewController.xib; sourceTree = "<group>"; };
+		018560EE218B30FB006460B9 /* BaseTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableCell.swift; sourceTree = "<group>"; };
+		018560F0218B3125006460B9 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		018560F2218B3173006460B9 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		018560F3218B3173006460B9 /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
 		01CA07CB2170437E005B1BC9 /* BaseIOS2018.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseIOS2018.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01CA07CE2170437E005B1BC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01CA07D521704382005B1BC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -93,6 +141,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		018560A7218B2AD3006460B9 /* TabbarMainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				018560A8218B2AE0006460B9 /* TabbarMainViewController.swift */,
+			);
+			path = TabbarMainViewController;
+			sourceTree = "<group>";
+		};
+		018560B9218B2E87006460B9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				018560ED218B30BF006460B9 /* Cell */,
+				018560BA218B2EA8006460B9 /* HomePresenter.swift */,
+				018560BB218B2EA8006460B9 /* HomeRouter.swift */,
+				018560BD218B2EA8006460B9 /* HomeProtocols.swift */,
+				018560BE218B2EA8006460B9 /* HomeInteractor.swift */,
+				018560BC218B2EA8006460B9 /* HomeViewController.swift */,
+				018560BF218B2EA8006460B9 /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		018560D3218B2F5A006460B9 /* AddProduct */ = {
+			isa = PBXGroup;
+			children = (
+				018560E1218B2F8B006460B9 /* AddProductPresenter.swift */,
+				018560E2218B2F8B006460B9 /* AddProductRouter.swift */,
+				018560E3218B2F8B006460B9 /* AddProductViewController.swift */,
+				018560E4218B2F8B006460B9 /* AddProductProtocols.swift */,
+				018560E5218B2F8B006460B9 /* AddProductInteractor.swift */,
+				018560E6218B2F8B006460B9 /* AddProductViewController.xib */,
+			);
+			path = AddProduct;
+			sourceTree = "<group>";
+		};
+		018560D4218B2F61006460B9 /* DetailProduct */ = {
+			isa = PBXGroup;
+			children = (
+				018560D5218B2F77006460B9 /* DetailProductPresenter.swift */,
+				018560D6218B2F77006460B9 /* DetailProductRouter.swift */,
+				018560D8218B2F77006460B9 /* DetailProductProtocols.swift */,
+				018560D9218B2F77006460B9 /* DetailProductInteractor.swift */,
+				018560D7218B2F77006460B9 /* DetailProductViewController.swift */,
+				018560DA218B2F77006460B9 /* DetailProductViewController.xib */,
+			);
+			path = DetailProduct;
+			sourceTree = "<group>";
+		};
+		018560ED218B30BF006460B9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				018560F2218B3173006460B9 /* ProductCell.swift */,
+				018560F3218B3173006460B9 /* ProductCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		01CA07C22170437E005B1BC9 = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +324,10 @@
 		01CA082F21704801005B1BC9 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				018560D4218B2F61006460B9 /* DetailProduct */,
+				018560D3218B2F5A006460B9 /* AddProduct */,
+				018560B9218B2E87006460B9 /* Home */,
+				018560A7218B2AD3006460B9 /* TabbarMainViewController */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -261,6 +370,8 @@
 		01CA08342170485D005B1BC9 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				018560AA218B2B17006460B9 /* AppImage.swift */,
+				018560F0218B3125006460B9 /* AppColor.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -291,6 +402,7 @@
 				01CA084F21704D16005B1BC9 /* BaseView.swift */,
 				01CA085121704D68005B1BC9 /* BaseViewController.swift */,
 				01CA0859217056AC005B1BC9 /* BaseIOS2018-Bridging-Header.h */,
+				018560EE218B30FB006460B9 /* BaseTableCell.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -376,6 +488,10 @@
 			files = (
 				01CA07D921704382005B1BC9 /* LaunchScreen.storyboard in Resources */,
 				01CA07D621704382005B1BC9 /* Assets.xcassets in Resources */,
+				018560C5218B2EA8006460B9 /* HomeViewController.xib in Resources */,
+				018560F5218B3173006460B9 /* ProductCell.xib in Resources */,
+				018560EC218B2F8B006460B9 /* AddProductViewController.xib in Resources */,
+				018560E0218B2F77006460B9 /* DetailProductViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,12 +506,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-BaseIOS2018/Pods-BaseIOS2018-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BarcodeScanner/BarcodeScanner.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BarcodeScanner.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -444,23 +562,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				018560DD218B2F77006460B9 /* DetailProductViewController.swift in Sources */,
 				01CA083A21704A6D005B1BC9 /* UIView+extension.swift in Sources */,
 				01CA085021704D16005B1BC9 /* BaseView.swift in Sources */,
 				01CA081A21704668005B1BC9 /* BaseResponse.swift in Sources */,
 				01CA08542170516E005B1BC9 /* Bundle+extension.swift in Sources */,
 				01CA084621704B5B005B1BC9 /* UIViewController+extension.swift in Sources */,
+				018560E8218B2F8B006460B9 /* AddProductRouter.swift in Sources */,
 				01CA084021704AF0005B1BC9 /* UICollectionView+extension.swift in Sources */,
+				018560EA218B2F8B006460B9 /* AddProductProtocols.swift in Sources */,
 				01CA085221704D68005B1BC9 /* BaseViewController.swift in Sources */,
+				018560EB218B2F8B006460B9 /* AddProductInteractor.swift in Sources */,
 				01CA083E21704AD8005B1BC9 /* UITableView+extension.swift in Sources */,
+				018560AB218B2B17006460B9 /* AppImage.swift in Sources */,
+				018560DB218B2F77006460B9 /* DetailProductPresenter.swift in Sources */,
 				01CA084C21704CDE005B1BC9 /* UIButton+extension.swift in Sources */,
+				018560E7218B2F8B006460B9 /* AddProductPresenter.swift in Sources */,
 				01CA081C21704668005B1BC9 /* MapperData.swift in Sources */,
+				018560C2218B2EA8006460B9 /* HomeViewController.swift in Sources */,
+				018560EF218B30FB006460B9 /* BaseTableCell.swift in Sources */,
 				01CA07CF2170437E005B1BC9 /* AppDelegate.swift in Sources */,
 				01CA084821704BBB005B1BC9 /* Date+extension.swift in Sources */,
+				018560DC218B2F77006460B9 /* DetailProductRouter.swift in Sources */,
 				01CA081E21704668005B1BC9 /* RatingUserParam.swift in Sources */,
 				01CA081B21704668005B1BC9 /* Network.swift in Sources */,
+				018560C0218B2EA8006460B9 /* HomePresenter.swift in Sources */,
+				018560E9218B2F8B006460B9 /* AddProductViewController.swift in Sources */,
+				018560F4218B3173006460B9 /* ProductCell.swift in Sources */,
+				018560DF218B2F77006460B9 /* DetailProductInteractor.swift in Sources */,
 				01CA084A21704C93005B1BC9 /* String+extension.swift in Sources */,
 				01CA084221704B12005B1BC9 /* UIDevice+extension.swift in Sources */,
 				01CA082321704668005B1BC9 /* BaseParam.swift in Sources */,
+				018560A9218B2AE0006460B9 /* TabbarMainViewController.swift in Sources */,
+				018560DE218B2F77006460B9 /* DetailProductProtocols.swift in Sources */,
+				018560C4218B2EA8006460B9 /* HomeInteractor.swift in Sources */,
+				018560C1218B2EA8006460B9 /* HomeRouter.swift in Sources */,
 				01CA083C21704AB9005B1BC9 /* UIColor+extension.swift in Sources */,
 				01CA082621704668005B1BC9 /* EndPointType.swift in Sources */,
 				01CA083821704A47005B1BC9 /* BaseViewXib.swift in Sources */,
@@ -468,8 +604,10 @@
 				01CA081D21704668005B1BC9 /* NetworkRequest.swift in Sources */,
 				01CA084421704B3B005B1BC9 /* UIImage+extension.swift in Sources */,
 				01CA085621705268005B1BC9 /* LanguageHelper.swift in Sources */,
+				018560F1218B3125006460B9 /* AppColor.swift in Sources */,
 				01CA081921704668005B1BC9 /* APIError.swift in Sources */,
 				01CA082721704668005B1BC9 /* UserEndPoint.swift in Sources */,
+				018560C3218B2EA8006460B9 /* HomeProtocols.swift in Sources */,
 				01CA084E21704CFC005B1BC9 /* Int+extension.swift in Sources */,
 				01CA082E21704791005B1BC9 /* BaseEntity.swift in Sources */,
 				01CA082B21704668005B1BC9 /* UserAPIService.swift in Sources */,
@@ -611,15 +749,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = Q3TBY53XUC;
 				INFOPLIST_FILE = BaseIOS2018/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.duong.BaseIOS2018;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.engma.dqhome-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "3df50e5c-9cc8-4c67-9f7d-64e6ac269ad7";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.engma.dqhome-ios";
 				SWIFT_OBJC_BRIDGING_HEADER = "BaseIOS2018/Components/Base/BaseIOS2018-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -633,16 +772,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = Q3TBY53XUC;
 				INFOPLIST_FILE = BaseIOS2018/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.duong.BaseIOS2018;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.engma.dqhome-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "8b8c7435-faae-4e02-83a4-0f301b80834e";
+				PROVISIONING_PROFILE_SPECIFIER = "match AdHoc com.engma.dqhome-ios";
 				SWIFT_OBJC_BRIDGING_HEADER = "BaseIOS2018/Components/Base/BaseIOS2018-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

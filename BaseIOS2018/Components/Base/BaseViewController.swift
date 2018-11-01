@@ -16,8 +16,8 @@ enum StyleNavigation {
 
 class BaseViewController: UIViewController {
     
-    let mainBackgroundColor = UIColor.white
-    let mainNavigationBarColor = UIColor.red
+    let mainBackgroundColor = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1)
+    let mainNavigationBarColor = UIColor.red.withAlphaComponent(0.9)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -108,6 +108,7 @@ extension BaseViewController {
     func setTitleNavigation(title: String, textColor: UIColor = UIColor.white, action: Selector? = nil ) {
         let lb = UILabel()
         lb.text             = title
+        lb.font = UIFont.boldSystemFont(ofSize: 21)
         lb.textAlignment    = .center
         lb.numberOfLines    = 2
         lb.textColor        = textColor
