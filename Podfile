@@ -7,6 +7,10 @@ def main_pods
   pod 'Alamofire'
   pod 'ObjectMapper'
   pod 'BarcodeScanner'
+
+  #Firebase
+  pod 'Firebase/Core'
+  pod 'Firebase/Messaging'
 end
 
 target 'BaseIOS2018' do
