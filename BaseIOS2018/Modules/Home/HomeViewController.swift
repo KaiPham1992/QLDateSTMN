@@ -19,6 +19,10 @@ class HomeViewController: BaseViewController, HomeViewProtocol {
         super.viewDidLoad()
         configureTable()
         setTitleNavigation(title: "Hàng Sắp Hết Hạn")
+        
+        let branch = BranchEntity(key: "TANTIEN", name: "Tân Tiến")
+        let product = ProductEntity(id: "123456789", name: "Sữa Vinvamilk", dateCheck: 123456, dateExpire: 654321)
+        DBFirebaseHelper.shared.addProduct(branch: branch, product: product)
     }
 }
 

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		01617DB2218D77ED00CEBCFF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01617DB1218D77ED00CEBCFF /* GoogleService-Info.plist */; };
+		01617DB4218D7BF800CEBCFF /* DBFirebaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01617DB3218D7BF800CEBCFF /* DBFirebaseHelper.swift */; };
+		01617DB6218D879500CEBCFF /* BranchEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01617DB5218D879500CEBCFF /* BranchEntity.swift */; };
+		01617DB8218D8BE200CEBCFF /* ProductEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01617DB7218D8BE200CEBCFF /* ProductEntity.swift */; };
 		018560A9218B2AE0006460B9 /* TabbarMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018560A8218B2AE0006460B9 /* TabbarMainViewController.swift */; };
 		018560AB218B2B17006460B9 /* AppImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018560AA218B2B17006460B9 /* AppImage.swift */; };
 		018560C0218B2EA8006460B9 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018560BA218B2EA8006460B9 /* HomePresenter.swift */; };
@@ -68,6 +71,9 @@
 
 /* Begin PBXFileReference section */
 		01617DB1218D77ED00CEBCFF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		01617DB3218D7BF800CEBCFF /* DBFirebaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBFirebaseHelper.swift; sourceTree = "<group>"; };
+		01617DB5218D879500CEBCFF /* BranchEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchEntity.swift; sourceTree = "<group>"; };
+		01617DB7218D8BE200CEBCFF /* ProductEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductEntity.swift; sourceTree = "<group>"; };
 		018560A8218B2AE0006460B9 /* TabbarMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarMainViewController.swift; sourceTree = "<group>"; };
 		018560AA218B2B17006460B9 /* AppImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImage.swift; sourceTree = "<group>"; };
 		018560BA218B2EA8006460B9 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
@@ -320,6 +326,8 @@
 			isa = PBXGroup;
 			children = (
 				01CA082D21704791005B1BC9 /* BaseEntity.swift */,
+				01617DB5218D879500CEBCFF /* BranchEntity.swift */,
+				01617DB7218D8BE200CEBCFF /* ProductEntity.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -366,6 +374,7 @@
 			isa = PBXGroup;
 			children = (
 				01CA085521705268005B1BC9 /* LanguageHelper.swift */,
+				01617DB3218D7BF800CEBCFF /* DBFirebaseHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -511,20 +520,22 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-BaseIOS2018/Pods-BaseIOS2018-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/BarcodeScanner/BarcodeScanner.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BarcodeScanner.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -594,6 +605,7 @@
 				01CA07CF2170437E005B1BC9 /* AppDelegate.swift in Sources */,
 				01CA084821704BBB005B1BC9 /* Date+extension.swift in Sources */,
 				018560DC218B2F77006460B9 /* DetailProductRouter.swift in Sources */,
+				01617DB4218D7BF800CEBCFF /* DBFirebaseHelper.swift in Sources */,
 				01CA081E21704668005B1BC9 /* RatingUserParam.swift in Sources */,
 				01CA081B21704668005B1BC9 /* Network.swift in Sources */,
 				018560C0218B2EA8006460B9 /* HomePresenter.swift in Sources */,
@@ -603,6 +615,7 @@
 				01CA084A21704C93005B1BC9 /* String+extension.swift in Sources */,
 				01CA084221704B12005B1BC9 /* UIDevice+extension.swift in Sources */,
 				01CA082321704668005B1BC9 /* BaseParam.swift in Sources */,
+				01617DB8218D8BE200CEBCFF /* ProductEntity.swift in Sources */,
 				018560A9218B2AE0006460B9 /* TabbarMainViewController.swift in Sources */,
 				018560DE218B2F77006460B9 /* DetailProductProtocols.swift in Sources */,
 				018560C4218B2EA8006460B9 /* HomeInteractor.swift in Sources */,
@@ -613,6 +626,7 @@
 				01CA082A21704668005B1BC9 /* Provider.swift in Sources */,
 				01CA081D21704668005B1BC9 /* NetworkRequest.swift in Sources */,
 				01CA084421704B3B005B1BC9 /* UIImage+extension.swift in Sources */,
+				01617DB6218D879500CEBCFF /* BranchEntity.swift in Sources */,
 				01CA085621705268005B1BC9 /* LanguageHelper.swift in Sources */,
 				018560F1218B3125006460B9 /* AppColor.swift in Sources */,
 				01CA081921704668005B1BC9 /* APIError.swift in Sources */,

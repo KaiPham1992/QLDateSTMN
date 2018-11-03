@@ -238,4 +238,12 @@ extension Date {
         dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
         return dateFormatter.string(from: self)
     }
+    
+    var secondsSince1970: UInt64 {
+        return UInt64((self.timeIntervalSince1970).rounded())
+    }
+    
+    init(seconds: UInt64) {
+        self = Date(timeIntervalSince1970: TimeInterval(seconds))
+    }
 }
