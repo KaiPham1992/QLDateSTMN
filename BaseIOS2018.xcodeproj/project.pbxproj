@@ -72,6 +72,10 @@
 		CBB7F58A218D77360092B2F4 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB7F588218D77360092B2F4 /* SignInViewController.swift */; };
 		CBB7F594218D78390092B2F4 /* TextFieldNewStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB7F592218D78390092B2F4 /* TextFieldNewStyleView.swift */; };
 		CBB7F595218D78390092B2F4 /* TextFieldNewStyleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBB7F593218D78390092B2F4 /* TextFieldNewStyleView.xib */; };
+		CBB7F599218D8A610092B2F4 /* NCSChoosePhotoPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB7F598218D8A610092B2F4 /* NCSChoosePhotoPopUp.swift */; };
+		CBB7F59E218D8A6B0092B2F4 /* SelectPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB7F59C218D8A6A0092B2F4 /* SelectPhotoCollectionViewCell.swift */; };
+		CBB7F59F218D8A6B0092B2F4 /* SelectPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB7F59D218D8A6A0092B2F4 /* SelectPhotoViewController.swift */; };
+		CBB7F5A1218D8C5A0092B2F4 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB7F5A0218D8C5A0092B2F4 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -144,6 +148,10 @@
 		CBB7F588218D77360092B2F4 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		CBB7F592218D78390092B2F4 /* TextFieldNewStyleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldNewStyleView.swift; sourceTree = "<group>"; };
 		CBB7F593218D78390092B2F4 /* TextFieldNewStyleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextFieldNewStyleView.xib; sourceTree = "<group>"; };
+		CBB7F598218D8A610092B2F4 /* NCSChoosePhotoPopUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCSChoosePhotoPopUp.swift; sourceTree = "<group>"; };
+		CBB7F59C218D8A6A0092B2F4 /* SelectPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		CBB7F59D218D8A6A0092B2F4 /* SelectPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectPhotoViewController.swift; sourceTree = "<group>"; };
+		CBB7F5A0218D8C5A0092B2F4 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		CF21F2666257CA7E4665EC07 /* Pods_BaseIOS2018.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseIOS2018.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -343,6 +351,7 @@
 		01CA082F21704801005B1BC9 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CBB7F59A218D8A6A0092B2F4 /* SelectPhotoViewController */,
 				CBB7F57A218D75F30092B2F4 /* SignIn */,
 				018560D4218B2F61006460B9 /* DetailProduct */,
 				018560D3218B2F5A006460B9 /* AddProduct */,
@@ -375,6 +384,7 @@
 		01CA083321704857005B1BC9 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				CBB7F5A0218D8C5A0092B2F4 /* Utils.swift */,
 				01CA085521705268005B1BC9 /* LanguageHelper.swift */,
 			);
 			path = Helpers;
@@ -453,10 +463,44 @@
 		CBB7F591218D78270092B2F4 /* ViewCustom */ = {
 			isa = PBXGroup;
 			children = (
+				CBB7F597218D8A060092B2F4 /* Popup */,
+				CBB7F596218D89F30092B2F4 /* TextFeild */,
+			);
+			path = ViewCustom;
+			sourceTree = "<group>";
+		};
+		CBB7F596218D89F30092B2F4 /* TextFeild */ = {
+			isa = PBXGroup;
+			children = (
 				CBB7F592218D78390092B2F4 /* TextFieldNewStyleView.swift */,
 				CBB7F593218D78390092B2F4 /* TextFieldNewStyleView.xib */,
 			);
-			path = ViewCustom;
+			path = TextFeild;
+			sourceTree = "<group>";
+		};
+		CBB7F597218D8A060092B2F4 /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				CBB7F598218D8A610092B2F4 /* NCSChoosePhotoPopUp.swift */,
+			);
+			path = Popup;
+			sourceTree = "<group>";
+		};
+		CBB7F59A218D8A6A0092B2F4 /* SelectPhotoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CBB7F59B218D8A6A0092B2F4 /* Cell */,
+				CBB7F59D218D8A6A0092B2F4 /* SelectPhotoViewController.swift */,
+			);
+			path = SelectPhotoViewController;
+			sourceTree = "<group>";
+		};
+		CBB7F59B218D8A6A0092B2F4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CBB7F59C218D8A6A0092B2F4 /* SelectPhotoCollectionViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -597,6 +641,7 @@
 				01CA08542170516E005B1BC9 /* Bundle+extension.swift in Sources */,
 				01CA084621704B5B005B1BC9 /* UIViewController+extension.swift in Sources */,
 				CBB7F582218D76100092B2F4 /* SignInRouter.swift in Sources */,
+				CBB7F599218D8A610092B2F4 /* NCSChoosePhotoPopUp.swift in Sources */,
 				018560E8218B2F8B006460B9 /* AddProductRouter.swift in Sources */,
 				CBB7F585218D76100092B2F4 /* SignInInteractor.swift in Sources */,
 				01CA084021704AF0005B1BC9 /* UICollectionView+extension.swift in Sources */,
@@ -619,9 +664,11 @@
 				01CA081B21704668005B1BC9 /* Network.swift in Sources */,
 				018560C0218B2EA8006460B9 /* HomePresenter.swift in Sources */,
 				CBB7F584218D76100092B2F4 /* SignInProtocols.swift in Sources */,
+				CBB7F5A1218D8C5A0092B2F4 /* Utils.swift in Sources */,
 				CBB7F594218D78390092B2F4 /* TextFieldNewStyleView.swift in Sources */,
 				018560E9218B2F8B006460B9 /* AddProductViewController.swift in Sources */,
 				018560F4218B3173006460B9 /* ProductCell.swift in Sources */,
+				CBB7F59E218D8A6B0092B2F4 /* SelectPhotoCollectionViewCell.swift in Sources */,
 				018560DF218B2F77006460B9 /* DetailProductInteractor.swift in Sources */,
 				01CA084A21704C93005B1BC9 /* String+extension.swift in Sources */,
 				01CA084221704B12005B1BC9 /* UIDevice+extension.swift in Sources */,
@@ -643,6 +690,7 @@
 				01CA082721704668005B1BC9 /* UserEndPoint.swift in Sources */,
 				018560C3218B2EA8006460B9 /* HomeProtocols.swift in Sources */,
 				01CA084E21704CFC005B1BC9 /* Int+extension.swift in Sources */,
+				CBB7F59F218D8A6B0092B2F4 /* SelectPhotoViewController.swift in Sources */,
 				01CA082E21704791005B1BC9 /* BaseEntity.swift in Sources */,
 				01CA082B21704668005B1BC9 /* UserAPIService.swift in Sources */,
 			);

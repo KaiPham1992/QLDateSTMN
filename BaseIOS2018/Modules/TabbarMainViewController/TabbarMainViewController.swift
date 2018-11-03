@@ -34,7 +34,6 @@ class TabbarMainViewController: UITabBarController {
         //---
         let vcAddProduct = AddProductRouter.createModule()
         vcAddProduct.tabBarItem = setBarItem(selectedImage: AppImage.imgListOn, normalImage: AppImage.imgListOff)
-        vcAddProduct.view.backgroundColor = .green
         vcAddProduct.tabBarItem.tag = 3
         
         //---

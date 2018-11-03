@@ -34,6 +34,6 @@ class SignInViewController: UIViewController, SignInViewProtocol {
     }
     
     @IBAction func btnSignInTapped() {
-        
+        self.present(TabbarMainViewController(), animated: true, completion: nil)
     }
 }
