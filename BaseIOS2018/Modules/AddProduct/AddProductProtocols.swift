@@ -18,12 +18,15 @@ protocol AddProductWireframeProtocol: class {
 protocol AddProductPresenterProtocol: class {
 
     var interactor: AddProductInteractorInputProtocol? { get set }
+    func btnAddTapped(product: ProductEntity)
 }
 
 //MARK: Interactor -
 protocol AddProductInteractorOutputProtocol: class {
 
     /* Interactor -> Presenter */
+    
+    
 }
 
 protocol AddProductInteractorInputProtocol: class {
@@ -31,6 +34,7 @@ protocol AddProductInteractorInputProtocol: class {
     var presenter: AddProductInteractorOutputProtocol?  { get set }
 
     /* Presenter -> Interactor */
+    func addProduct(product: ProductEntity)
 }
 
 //MARK: View -

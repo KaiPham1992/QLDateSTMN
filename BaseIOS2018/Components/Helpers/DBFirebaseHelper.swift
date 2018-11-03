@@ -10,13 +10,15 @@ import Foundation
 import Firebase
 import FirebaseDatabase
 import FirebaseAuth
+import Alamofire
 
 typealias CompletionList = (_ listEntity: [BaseEntity]) -> Void
-
 
 class DBFirebaseHelper: NSObject {
     static let shared = DBFirebaseHelper()
     let dbRoot = Database.database().reference()
+    
+    var branchMain = BranchEntity(key: "TAN_TIEN", name: "TAN_TIEN")
     
     override init() {
         super.init()
@@ -25,30 +27,36 @@ class DBFirebaseHelper: NSObject {
     func getAllBranch(completion: @escaping CompletionList){
         var listBranch = [BranchEntity]()
         dbRoot.observe(DataEventType.childAdded) { snap in
-            if let value = snap.value as? String {
-                let newBranch = BranchEntity(key: snap.key, name: value)
-                listBranch.append(newBranch)
-                completion(listBranch)
-            }
+            let newBranch = BranchEntity(key: snap.key, name: snap.key)
+            listBranch.append(newBranch)
+            completion(listBranch)
         }
     }
     
-    func addProduct(branch: BranchEntity, product: ProductEntity) {
-        let ref = dbRoot.child(branch.key&).child(product.id&).childByAutoId()
-        ref.setValue(product.toJSON())
+    func addProduct(product: ProductEntity) {
+        let branch = branchMain
+        if Connectivity.isConnectedToInternet() {
+            let ref = dbRoot.child(branch.key&).child("PRODUCT").child(product.id&).childByAutoId()
+            ref.setValue(product.toJSON())
+            ref.removeAllObservers()
+            ref.observe(.value) { _ in
+                PopUpHelper.shared.showMessage(message: "Thêm thành công!")
+            }
+        } else {
+            PopUpHelper.shared.showMessage(message: "Không có internet!")
+        }
+        
     }
     
-    func login(email: String, password: String) {
-        try? Auth.auth().signOut()
-//        Auth.auth().signIn(withEmail: "ngocduong2310@gmail.com", password: "12345678") { (user, error) in
-//           // print(user?.user.email)
-//
-//
-//        }
-        
-//        self.refSTMN.observe(DataEventType.childAdded, with: { (data) in
-//            print(data.key)
-//            print(data.value)
-//        })
+    func login(email: String, password: String, completion: @escaping CompletionClosure) {
+        ProgressView.shared.showProgress()
+        Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
+            ProgressView.shared.hideProgressView()
+            if error != nil {
+                PopUpHelper.shared.showMessage(message: error!.localizedDescription)
+            } else {
+                completion()
+            }
+        }
     }
 }

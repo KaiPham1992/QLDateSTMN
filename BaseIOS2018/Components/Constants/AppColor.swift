@@ -9,7 +9,7 @@
 import UIKit
 
 struct AppColor {
-    static let red = UIColor(hexString: "ea2127") //ea2127 //ec1c24
+    static let main = UIColor(red: 219/255, green: 82/255, blue: 83/255, alpha: 1)
     static let loadGif = UIColor(hexString: "de3629")
     static let white = UIColor.white
     static let placeHolderWhite = UIColor.white.withAlphaComponent(0.7)

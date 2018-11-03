@@ -26,40 +26,40 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Rv-Vg-N8A">
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Rv-Vg-N8A">
                     <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sGO-nD-Bag">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="536"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="511"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bình Dương Mart" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="snX-9Y-zxK">
-                                    <rect key="frame" x="89" y="75" width="198.5" height="30"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BÌNH DƯƠNG MART" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="snX-9Y-zxK">
+                                    <rect key="frame" x="69.5" y="60" width="238" height="30"/>
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login with email and password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pmr-gh-WbO">
-                                    <rect key="frame" x="70.5" y="155" width="234" height="21"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Để có thể thành công, bạn buộc phải tin rằng bạn có thể" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pmr-gh-WbO">
+                                    <rect key="frame" x="20" y="120" width="335" height="41"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                    <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ul-ks-kYx" customClass="TextFieldNewStyleView" customModule="BaseIOS2018" customModuleProvider="target">
-                                    <rect key="frame" x="40" y="226" width="295" height="50"/>
+                                    <rect key="frame" x="40" y="201" width="295" height="50"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="50" id="uJQ-uj-cts"/>
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jHl-3R-Pzf" customClass="TextFieldNewStyleView" customModule="BaseIOS2018" customModuleProvider="target">
-                                    <rect key="frame" x="40" y="296" width="295" height="50"/>
+                                    <rect key="frame" x="40" y="271" width="295" height="50"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </view>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5X-Bz-cb4">
-                                    <rect key="frame" x="40" y="366" width="295" height="50"/>
+                                    <rect key="frame" x="40" y="341" width="295" height="50"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                    <state key="normal" title="Sign In">
+                                    <state key="normal" title="Đăng Nhập">
                                         <color key="titleColor" red="0.85882352939999995" green="0.32156862749999998" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
                                     <connections>
@@ -67,7 +67,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="inS-JK-cRg">
-                                    <rect key="frame" x="40" y="436" width="295" height="50"/>
+                                    <rect key="frame" x="40" y="411" width="295" height="50"/>
                                     <state key="normal" title="Forgot password ?">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
@@ -75,22 +75,24 @@
                             </subviews>
                             <constraints>
                                 <constraint firstItem="inS-JK-cRg" firstAttribute="trailing" secondItem="Z5X-Bz-cb4" secondAttribute="trailing" id="1ib-aw-ana"/>
-                                <constraint firstItem="0ul-ks-kYx" firstAttribute="top" secondItem="pmr-gh-WbO" secondAttribute="bottom" constant="50" id="38j-Lb-gEk"/>
+                                <constraint firstItem="0ul-ks-kYx" firstAttribute="top" secondItem="pmr-gh-WbO" secondAttribute="bottom" constant="40" id="38j-Lb-gEk"/>
                                 <constraint firstAttribute="bottom" secondItem="inS-JK-cRg" secondAttribute="bottom" constant="50" id="3qc-qR-FYM"/>
                                 <constraint firstItem="Z5X-Bz-cb4" firstAttribute="height" secondItem="jHl-3R-Pzf" secondAttribute="height" id="43T-56-83i"/>
-                                <constraint firstItem="snX-9Y-zxK" firstAttribute="top" secondItem="sGO-nD-Bag" secondAttribute="top" constant="75" id="5N2-Ow-9BR"/>
+                                <constraint firstItem="snX-9Y-zxK" firstAttribute="top" secondItem="sGO-nD-Bag" secondAttribute="top" constant="60" id="5N2-Ow-9BR"/>
                                 <constraint firstItem="inS-JK-cRg" firstAttribute="top" secondItem="Z5X-Bz-cb4" secondAttribute="bottom" constant="20" id="Eff-Bj-xfa"/>
                                 <constraint firstItem="jHl-3R-Pzf" firstAttribute="leading" secondItem="0ul-ks-kYx" secondAttribute="leading" id="Jnn-Zg-dH5"/>
                                 <constraint firstItem="Z5X-Bz-cb4" firstAttribute="trailing" secondItem="jHl-3R-Pzf" secondAttribute="trailing" id="KH8-ki-CTk"/>
                                 <constraint firstItem="jHl-3R-Pzf" firstAttribute="trailing" secondItem="0ul-ks-kYx" secondAttribute="trailing" id="LvE-BA-wzx"/>
                                 <constraint firstItem="jHl-3R-Pzf" firstAttribute="top" secondItem="0ul-ks-kYx" secondAttribute="bottom" constant="20" id="Ngz-PK-Xg3"/>
                                 <constraint firstItem="Z5X-Bz-cb4" firstAttribute="leading" secondItem="jHl-3R-Pzf" secondAttribute="leading" id="T6p-tf-Te5"/>
+                                <constraint firstAttribute="trailing" secondItem="pmr-gh-WbO" secondAttribute="trailing" constant="20" id="cc6-hU-hhE"/>
                                 <constraint firstItem="Z5X-Bz-cb4" firstAttribute="top" secondItem="jHl-3R-Pzf" secondAttribute="bottom" constant="20" id="dYe-Ms-OiL"/>
                                 <constraint firstItem="inS-JK-cRg" firstAttribute="height" secondItem="Z5X-Bz-cb4" secondAttribute="height" id="fOH-Ci-ynx"/>
                                 <constraint firstItem="inS-JK-cRg" firstAttribute="leading" secondItem="Z5X-Bz-cb4" secondAttribute="leading" id="hCT-rU-2jN"/>
-                                <constraint firstItem="pmr-gh-WbO" firstAttribute="top" secondItem="snX-9Y-zxK" secondAttribute="bottom" constant="50" id="mFe-TO-N9r"/>
+                                <constraint firstItem="pmr-gh-WbO" firstAttribute="top" secondItem="snX-9Y-zxK" secondAttribute="bottom" constant="30" id="mFe-TO-N9r"/>
                                 <constraint firstItem="pmr-gh-WbO" firstAttribute="centerX" secondItem="sGO-nD-Bag" secondAttribute="centerX" id="nxf-Nt-OL7"/>
                                 <constraint firstItem="jHl-3R-Pzf" firstAttribute="height" secondItem="0ul-ks-kYx" secondAttribute="height" id="qqn-Mq-U7s"/>
+                                <constraint firstItem="pmr-gh-WbO" firstAttribute="leading" secondItem="sGO-nD-Bag" secondAttribute="leading" constant="20" id="sqg-3n-nyq"/>
                                 <constraint firstItem="0ul-ks-kYx" firstAttribute="leading" secondItem="sGO-nD-Bag" secondAttribute="leading" constant="40" id="vVc-9s-EKA"/>
                                 <constraint firstItem="snX-9Y-zxK" firstAttribute="centerX" secondItem="sGO-nD-Bag" secondAttribute="centerX" id="vnO-es-Fis"/>
                                 <constraint firstAttribute="trailing" secondItem="0ul-ks-kYx" secondAttribute="trailing" constant="40" id="wgy-ez-CFU"/>

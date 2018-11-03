@@ -12,12 +12,13 @@ import Foundation
 
 //MARK: Wireframe -
 protocol SignInWireframeProtocol: class {
-
+    func goToBranch()
 }
 //MARK: Presenter -
 protocol SignInPresenterProtocol: class {
 
     var interactor: SignInInteractorInputProtocol? { get set }
+    func goToBranch()
 }
 
 //MARK: Interactor -

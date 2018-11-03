@@ -21,5 +21,9 @@ class SignInPresenter: SignInPresenterProtocol, SignInInteractorOutputProtocol {
         self.interactor = interactor
         self.router = router
     }
+    
+    func goToBranch() {
+        router.goToBranch()
+    }
 
 }

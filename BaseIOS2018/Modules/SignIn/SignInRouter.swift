@@ -27,4 +27,8 @@ class SignInRouter: SignInWireframeProtocol {
 
         return view
     }
+    
+    func goToBranch() {
+        self.viewController?.navigationController?.pushViewController(BranchRouter.createModule(), animated: true)
+    }
 }

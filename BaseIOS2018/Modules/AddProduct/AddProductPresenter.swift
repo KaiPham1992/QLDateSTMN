@@ -11,6 +11,10 @@
 import UIKit
 
 class AddProductPresenter: AddProductPresenterProtocol, AddProductInteractorOutputProtocol {
+    func btnAddTapped(product: ProductEntity) {
+        interactor?.addProduct(product: product)
+    }
+    
 
     weak private var view: AddProductViewProtocol?
     var interactor: AddProductInteractorInputProtocol?

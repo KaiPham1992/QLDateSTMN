@@ -11,6 +11,9 @@
 import UIKit
 
 class AddProductInteractor: AddProductInteractorInputProtocol {
-
+    func addProduct(product: ProductEntity) {
+        DBFirebaseHelper.shared.addProduct(product: product)
+    }
+    
     weak var presenter: AddProductInteractorOutputProtocol?
 }

@@ -11,6 +11,59 @@
 		01617DB4218D7BF800CEBCFF /* DBFirebaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01617DB3218D7BF800CEBCFF /* DBFirebaseHelper.swift */; };
 		01617DB6218D879500CEBCFF /* BranchEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01617DB5218D879500CEBCFF /* BranchEntity.swift */; };
 		01617DB8218D8BE200CEBCFF /* ProductEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01617DB7218D8BE200CEBCFF /* ProductEntity.swift */; };
+		016D50FB218D9C2900A28DC0 /* RouterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D50FA218D9C2900A28DC0 /* RouterService.swift */; };
+		016D50FD218D9C8900A28DC0 /* Window+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D50FC218D9C8900A28DC0 /* Window+extension.swift */; };
+		016D5184218D9E3A00A28DC0 /* KActivityIndicatorAnimationAudioEqualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D515B218D9E3A00A28DC0 /* KActivityIndicatorAnimationAudioEqualizer.swift */; };
+		016D5185218D9E3A00A28DC0 /* KActivityIndicatorAnimationOrbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D515C218D9E3A00A28DC0 /* KActivityIndicatorAnimationOrbit.swift */; };
+		016D5186218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallGridBeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D515D218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallGridBeat.swift */; };
+		016D5187218D9E3A00A28DC0 /* KActivityIndicatorAnimationTriangleSkewSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D515E218D9E3A00A28DC0 /* KActivityIndicatorAnimationTriangleSkewSpin.swift */; };
+		016D5188218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallGridPulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D515F218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallGridPulse.swift */; };
+		016D5189218D9E3A00A28DC0 /* KActivityIndicatorAnimationPacman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D5160218D9E3A00A28DC0 /* KActivityIndicatorAnimationPacman.swift */; };
+		016D518A218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallRotateChase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D5161218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallRotateChase.swift */; };
+		016D518B218D9E3A00A28DC0 /* KActivityIndicatorAnimationSemiCircleSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D5162218D9E3A00A28DC0 /* KActivityIndicatorAnimationSemiCircleSpin.swift */; };
+		016D518C218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D5163218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallScale.swift */; };
+		016D518D218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallScaleRipple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D5164218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallScaleRipple.swift */; };
+		016D518E218D9E3A00A28DC0 /* KActivityIndicatorAnimationLineSpinFadeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D5165218D9E3A00A28DC0 /* KActivityIndicatorAnimationLineSpinFadeLoader.swift */; };
+		016D518F218D9E3A00A28DC0 /* KActivityIndicatorAnimationLineScalePulseOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D5166218D9E3A00A28DC0 /* KActivityIndicatorAnimationLineScalePulseOut.swift */; };
+		016D5190218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallPulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D5167218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallPulse.swift */; };
+		016D5191218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallClipRotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D5168218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallClipRotate.swift */; };
+		016D5192218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallClipRotateMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D5169218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallClipRotateMultiple.swift */; };
+		016D5193218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallZigZagDeflect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D516A218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallZigZagDeflect.swift */; };
+		016D5194218D9E3A00A28DC0 /* KActivityIndicatorAnimationBlank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D516B218D9E3A00A28DC0 /* KActivityIndicatorAnimationBlank.swift */; };
+		016D5195218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallTrianglePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D516C218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallTrianglePath.swift */; };
+		016D5196218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallScaleRippleMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D516D218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallScaleRippleMultiple.swift */; };
+		016D5197218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallSpinFadeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D516E218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallSpinFadeLoader.swift */; };
+		016D5198218D9E3A00A28DC0 /* KActivityIndicatorAnimationLineScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D516F218D9E3A00A28DC0 /* KActivityIndicatorAnimationLineScale.swift */; };
+		016D5199218D9E3A00A28DC0 /* KActivityIndicatorAnimationLineScaleParty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D5170218D9E3A00A28DC0 /* KActivityIndicatorAnimationLineScaleParty.swift */; };
+		016D519A218D9E3A00A28DC0 /* KActivityIndicatorAnimationLineScalePulseOutRapid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D5171218D9E3A00A28DC0 /* KActivityIndicatorAnimationLineScalePulseOutRapid.swift */; };
+		016D519B218D9E3A00A28DC0 /* KActivityIndicatorAnimationSquareSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D5172218D9E3A00A28DC0 /* KActivityIndicatorAnimationSquareSpin.swift */; };
+		016D519C218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallBeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D5173218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallBeat.swift */; };
+		016D519D218D9E3A00A28DC0 /* KActivityIndicatorAnimationCubeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D5174218D9E3A00A28DC0 /* KActivityIndicatorAnimationCubeTransition.swift */; };
+		016D519E218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallZigZag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D5175218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallZigZag.swift */; };
+		016D519F218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallPulseSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D5176218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallPulseSync.swift */; };
+		016D51A0218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallScaleMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D5177218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallScaleMultiple.swift */; };
+		016D51A1218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallClipRotatePulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D5178218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallClipRotatePulse.swift */; };
+		016D51A2218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallPulseRise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D5179218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallPulseRise.swift */; };
+		016D51A3218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallRotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D517A218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallRotate.swift */; };
+		016D51A4218D9E3A00A28DC0 /* KActivityIndicatorAnimationCircleStrokeSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D517B218D9E3A00A28DC0 /* KActivityIndicatorAnimationCircleStrokeSpin.swift */; };
+		016D51A5218D9E3A00A28DC0 /* KActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D517D218D9E3A00A28DC0 /* KActivityIndicatorView.swift */; };
+		016D51A6218D9E3A00A28DC0 /* KActivityIndicatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D517E218D9E3A00A28DC0 /* KActivityIndicatorType.swift */; };
+		016D51A7218D9E3A00A28DC0 /* KActivityIndicatorShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D517F218D9E3A00A28DC0 /* KActivityIndicatorShape.swift */; };
+		016D51A8218D9E3A00A28DC0 /* FadeInOutAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D5180218D9E3A00A28DC0 /* FadeInOutAnimation.swift */; };
+		016D51A9218D9E3A00A28DC0 /* KActivityIndicatorAnimationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D5181218D9E3A00A28DC0 /* KActivityIndicatorAnimationDelegate.swift */; };
+		016D51AA218D9E3A00A28DC0 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D5183218D9E3A00A28DC0 /* ProgressView.swift */; };
+		016D51AC218DA2F500A28DC0 /* PopUpHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D51AB218DA2F500A28DC0 /* PopUpHelper.swift */; };
+		016D51AF218DAAE200A28DC0 /* NCSBasePopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D51AE218DAAE200A28DC0 /* NCSBasePopUpView.swift */; };
+		016D51B1218DAB5400A28DC0 /* AppChooseDatePopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D51B0218DAB5400A28DC0 /* AppChooseDatePopUpView.swift */; };
+		016D51B3218DB2F600A28DC0 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D51B2218DB2F600A28DC0 /* Connectivity.swift */; };
+		016D51BB218DB42700A28DC0 /* BranchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D51B5218DB42700A28DC0 /* BranchPresenter.swift */; };
+		016D51BC218DB42700A28DC0 /* BranchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D51B6218DB42700A28DC0 /* BranchRouter.swift */; };
+		016D51BD218DB42700A28DC0 /* BranchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D51B7218DB42700A28DC0 /* BranchViewController.swift */; };
+		016D51BE218DB42700A28DC0 /* BranchProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D51B8218DB42700A28DC0 /* BranchProtocols.swift */; };
+		016D51BF218DB42700A28DC0 /* BranchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D51B9218DB42700A28DC0 /* BranchInteractor.swift */; };
+		016D51C0218DB42700A28DC0 /* BranchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 016D51BA218DB42700A28DC0 /* BranchViewController.xib */; };
+		016D51C4218DB44400A28DC0 /* BranchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016D51C2218DB44400A28DC0 /* BranchCell.swift */; };
+		016D51C5218DB44400A28DC0 /* BranchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 016D51C3218DB44400A28DC0 /* BranchCell.xib */; };
 		018560A9218B2AE0006460B9 /* TabbarMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018560A8218B2AE0006460B9 /* TabbarMainViewController.swift */; };
 		018560AB218B2B17006460B9 /* AppImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018560AA218B2B17006460B9 /* AppImage.swift */; };
 		018560C0218B2EA8006460B9 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018560BA218B2EA8006460B9 /* HomePresenter.swift */; };
@@ -75,6 +128,10 @@
 		CBB7F58A218D77360092B2F4 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB7F588218D77360092B2F4 /* SignInViewController.swift */; };
 		CBB7F594218D78390092B2F4 /* TextFieldNewStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB7F592218D78390092B2F4 /* TextFieldNewStyleView.swift */; };
 		CBB7F595218D78390092B2F4 /* TextFieldNewStyleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBB7F593218D78390092B2F4 /* TextFieldNewStyleView.xib */; };
+		CBB7F599218D8A610092B2F4 /* NCSChoosePhotoPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB7F598218D8A610092B2F4 /* NCSChoosePhotoPopUp.swift */; };
+		CBB7F59E218D8A6B0092B2F4 /* SelectPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB7F59C218D8A6A0092B2F4 /* SelectPhotoCollectionViewCell.swift */; };
+		CBB7F59F218D8A6B0092B2F4 /* SelectPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB7F59D218D8A6A0092B2F4 /* SelectPhotoViewController.swift */; };
+		CBB7F5A1218D8C5A0092B2F4 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB7F5A0218D8C5A0092B2F4 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +139,59 @@
 		01617DB3218D7BF800CEBCFF /* DBFirebaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBFirebaseHelper.swift; sourceTree = "<group>"; };
 		01617DB5218D879500CEBCFF /* BranchEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchEntity.swift; sourceTree = "<group>"; };
 		01617DB7218D8BE200CEBCFF /* ProductEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductEntity.swift; sourceTree = "<group>"; };
+		016D50FA218D9C2900A28DC0 /* RouterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterService.swift; sourceTree = "<group>"; };
+		016D50FC218D9C8900A28DC0 /* Window+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Window+extension.swift"; sourceTree = "<group>"; };
+		016D515B218D9E3A00A28DC0 /* KActivityIndicatorAnimationAudioEqualizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KActivityIndicatorAnimationAudioEqualizer.swift; sourceTree = "<group>"; };
+		016D515C218D9E3A00A28DC0 /* KActivityIndicatorAnimationOrbit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KActivityIndicatorAnimationOrbit.swift; sourceTree = "<group>"; };
+		016D515D218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallGridBeat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KActivityIndicatorAnimationBallGridBeat.swift; sourceTree = "<group>"; };
+		016D515E218D9E3A00A28DC0 /* KActivityIndicatorAnimationTriangleSkewSpin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KActivityIndicatorAnimationTriangleSkewSpin.swift; sourceTree = "<group>"; };
+		016D515F218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallGridPulse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KActivityIndicatorAnimationBallGridPulse.swift; sourceTree = "<group>"; };
+		016D5160218D9E3A00A28DC0 /* KActivityIndicatorAnimationPacman.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KActivityIndicatorAnimationPacman.swift; sourceTree = "<group>"; };
+		016D5161218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallRotateChase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KActivityIndicatorAnimationBallRotateChase.swift; sourceTree = "<group>"; };
+		016D5162218D9E3A00A28DC0 /* KActivityIndicatorAnimationSemiCircleSpin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KActivityIndicatorAnimationSemiCircleSpin.swift; sourceTree = "<group>"; };
+		016D5163218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallScale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KActivityIndicatorAnimationBallScale.swift; sourceTree = "<group>"; };
+		016D5164218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallScaleRipple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KActivityIndicatorAnimationBallScaleRipple.swift; sourceTree = "<group>"; };
+		016D5165218D9E3A00A28DC0 /* KActivityIndicatorAnimationLineSpinFadeLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KActivityIndicatorAnimationLineSpinFadeLoader.swift; sourceTree = "<group>"; };
+		016D5166218D9E3A00A28DC0 /* KActivityIndicatorAnimationLineScalePulseOut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KActivityIndicatorAnimationLineScalePulseOut.swift; sourceTree = "<group>"; };
+		016D5167218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallPulse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KActivityIndicatorAnimationBallPulse.swift; sourceTree = "<group>"; };
+		016D5168218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallClipRotate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KActivityIndicatorAnimationBallClipRotate.swift; sourceTree = "<group>"; };
+		016D5169218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallClipRotateMultiple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KActivityIndicatorAnimationBallClipRotateMultiple.swift; sourceTree = "<group>"; };
+		016D516A218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallZigZagDeflect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KActivityIndicatorAnimationBallZigZagDeflect.swift; sourceTree = "<group>"; };
+		016D516B218D9E3A00A28DC0 /* KActivityIndicatorAnimationBlank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KActivityIndicatorAnimationBlank.swift; sourceTree = "<group>"; };
+		016D516C218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallTrianglePath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KActivityIndicatorAnimationBallTrianglePath.swift; sourceTree = "<group>"; };
+		016D516D218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallScaleRippleMultiple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KActivityIndicatorAnimationBallScaleRippleMultiple.swift; sourceTree = "<group>"; };
+		016D516E218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallSpinFadeLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KActivityIndicatorAnimationBallSpinFadeLoader.swift; sourceTree = "<group>"; };
+		016D516F218D9E3A00A28DC0 /* KActivityIndicatorAnimationLineScale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KActivityIndicatorAnimationLineScale.swift; sourceTree = "<group>"; };
+		016D5170218D9E3A00A28DC0 /* KActivityIndicatorAnimationLineScaleParty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KActivityIndicatorAnimationLineScaleParty.swift; sourceTree = "<group>"; };
+		016D5171218D9E3A00A28DC0 /* KActivityIndicatorAnimationLineScalePulseOutRapid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KActivityIndicatorAnimationLineScalePulseOutRapid.swift; sourceTree = "<group>"; };
+		016D5172218D9E3A00A28DC0 /* KActivityIndicatorAnimationSquareSpin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KActivityIndicatorAnimationSquareSpin.swift; sourceTree = "<group>"; };
+		016D5173218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallBeat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KActivityIndicatorAnimationBallBeat.swift; sourceTree = "<group>"; };
+		016D5174218D9E3A00A28DC0 /* KActivityIndicatorAnimationCubeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KActivityIndicatorAnimationCubeTransition.swift; sourceTree = "<group>"; };
+		016D5175218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallZigZag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KActivityIndicatorAnimationBallZigZag.swift; sourceTree = "<group>"; };
+		016D5176218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallPulseSync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KActivityIndicatorAnimationBallPulseSync.swift; sourceTree = "<group>"; };
+		016D5177218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallScaleMultiple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KActivityIndicatorAnimationBallScaleMultiple.swift; sourceTree = "<group>"; };
+		016D5178218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallClipRotatePulse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KActivityIndicatorAnimationBallClipRotatePulse.swift; sourceTree = "<group>"; };
+		016D5179218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallPulseRise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KActivityIndicatorAnimationBallPulseRise.swift; sourceTree = "<group>"; };
+		016D517A218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallRotate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KActivityIndicatorAnimationBallRotate.swift; sourceTree = "<group>"; };
+		016D517B218D9E3A00A28DC0 /* KActivityIndicatorAnimationCircleStrokeSpin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KActivityIndicatorAnimationCircleStrokeSpin.swift; sourceTree = "<group>"; };
+		016D517D218D9E3A00A28DC0 /* KActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KActivityIndicatorView.swift; sourceTree = "<group>"; };
+		016D517E218D9E3A00A28DC0 /* KActivityIndicatorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KActivityIndicatorType.swift; sourceTree = "<group>"; };
+		016D517F218D9E3A00A28DC0 /* KActivityIndicatorShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KActivityIndicatorShape.swift; sourceTree = "<group>"; };
+		016D5180218D9E3A00A28DC0 /* FadeInOutAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeInOutAnimation.swift; sourceTree = "<group>"; };
+		016D5181218D9E3A00A28DC0 /* KActivityIndicatorAnimationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KActivityIndicatorAnimationDelegate.swift; sourceTree = "<group>"; };
+		016D5183218D9E3A00A28DC0 /* ProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		016D51AB218DA2F500A28DC0 /* PopUpHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpHelper.swift; sourceTree = "<group>"; };
+		016D51AE218DAAE200A28DC0 /* NCSBasePopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCSBasePopUpView.swift; sourceTree = "<group>"; };
+		016D51B0218DAB5400A28DC0 /* AppChooseDatePopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppChooseDatePopUpView.swift; sourceTree = "<group>"; };
+		016D51B2218DB2F600A28DC0 /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
+		016D51B5218DB42700A28DC0 /* BranchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchPresenter.swift; sourceTree = "<group>"; };
+		016D51B6218DB42700A28DC0 /* BranchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchRouter.swift; sourceTree = "<group>"; };
+		016D51B7218DB42700A28DC0 /* BranchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchViewController.swift; sourceTree = "<group>"; };
+		016D51B8218DB42700A28DC0 /* BranchProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchProtocols.swift; sourceTree = "<group>"; };
+		016D51B9218DB42700A28DC0 /* BranchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchInteractor.swift; sourceTree = "<group>"; };
+		016D51BA218DB42700A28DC0 /* BranchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BranchViewController.xib; sourceTree = "<group>"; };
+		016D51C2218DB44400A28DC0 /* BranchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchCell.swift; sourceTree = "<group>"; };
+		016D51C3218DB44400A28DC0 /* BranchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BranchCell.xib; sourceTree = "<group>"; };
 		018560A8218B2AE0006460B9 /* TabbarMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarMainViewController.swift; sourceTree = "<group>"; };
 		018560AA218B2B17006460B9 /* AppImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImage.swift; sourceTree = "<group>"; };
 		018560BA218B2EA8006460B9 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
@@ -150,6 +260,10 @@
 		CBB7F588218D77360092B2F4 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		CBB7F592218D78390092B2F4 /* TextFieldNewStyleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldNewStyleView.swift; sourceTree = "<group>"; };
 		CBB7F593218D78390092B2F4 /* TextFieldNewStyleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextFieldNewStyleView.xib; sourceTree = "<group>"; };
+		CBB7F598218D8A610092B2F4 /* NCSChoosePhotoPopUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCSChoosePhotoPopUp.swift; sourceTree = "<group>"; };
+		CBB7F59C218D8A6A0092B2F4 /* SelectPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		CBB7F59D218D8A6A0092B2F4 /* SelectPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectPhotoViewController.swift; sourceTree = "<group>"; };
+		CBB7F5A0218D8C5A0092B2F4 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		CF21F2666257CA7E4665EC07 /* Pods_BaseIOS2018.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseIOS2018.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -165,6 +279,109 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		016D50F9218D9C1600A28DC0 /* SupportFile */ = {
+			isa = PBXGroup;
+			children = (
+				01CA07CE2170437E005B1BC9 /* AppDelegate.swift */,
+				01617DB1218D77ED00CEBCFF /* GoogleService-Info.plist */,
+				016D50FA218D9C2900A28DC0 /* RouterService.swift */,
+			);
+			path = SupportFile;
+			sourceTree = "<group>";
+		};
+		016D5159218D9E3A00A28DC0 /* Indicator */ = {
+			isa = PBXGroup;
+			children = (
+				016D515A218D9E3A00A28DC0 /* Animation */,
+				016D517C218D9E3A00A28DC0 /* KActivityIndicatorView */,
+				016D5182218D9E3A00A28DC0 /* ProgressView */,
+			);
+			path = Indicator;
+			sourceTree = "<group>";
+		};
+		016D515A218D9E3A00A28DC0 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				016D515B218D9E3A00A28DC0 /* KActivityIndicatorAnimationAudioEqualizer.swift */,
+				016D515C218D9E3A00A28DC0 /* KActivityIndicatorAnimationOrbit.swift */,
+				016D515D218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallGridBeat.swift */,
+				016D515E218D9E3A00A28DC0 /* KActivityIndicatorAnimationTriangleSkewSpin.swift */,
+				016D515F218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallGridPulse.swift */,
+				016D5160218D9E3A00A28DC0 /* KActivityIndicatorAnimationPacman.swift */,
+				016D5161218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallRotateChase.swift */,
+				016D5162218D9E3A00A28DC0 /* KActivityIndicatorAnimationSemiCircleSpin.swift */,
+				016D5163218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallScale.swift */,
+				016D5164218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallScaleRipple.swift */,
+				016D5165218D9E3A00A28DC0 /* KActivityIndicatorAnimationLineSpinFadeLoader.swift */,
+				016D5166218D9E3A00A28DC0 /* KActivityIndicatorAnimationLineScalePulseOut.swift */,
+				016D5167218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallPulse.swift */,
+				016D5168218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallClipRotate.swift */,
+				016D5169218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallClipRotateMultiple.swift */,
+				016D516A218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallZigZagDeflect.swift */,
+				016D516B218D9E3A00A28DC0 /* KActivityIndicatorAnimationBlank.swift */,
+				016D516C218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallTrianglePath.swift */,
+				016D516D218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallScaleRippleMultiple.swift */,
+				016D516E218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallSpinFadeLoader.swift */,
+				016D516F218D9E3A00A28DC0 /* KActivityIndicatorAnimationLineScale.swift */,
+				016D5170218D9E3A00A28DC0 /* KActivityIndicatorAnimationLineScaleParty.swift */,
+				016D5171218D9E3A00A28DC0 /* KActivityIndicatorAnimationLineScalePulseOutRapid.swift */,
+				016D5172218D9E3A00A28DC0 /* KActivityIndicatorAnimationSquareSpin.swift */,
+				016D5173218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallBeat.swift */,
+				016D5174218D9E3A00A28DC0 /* KActivityIndicatorAnimationCubeTransition.swift */,
+				016D5175218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallZigZag.swift */,
+				016D5176218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallPulseSync.swift */,
+				016D5177218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallScaleMultiple.swift */,
+				016D5178218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallClipRotatePulse.swift */,
+				016D5179218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallPulseRise.swift */,
+				016D517A218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallRotate.swift */,
+				016D517B218D9E3A00A28DC0 /* KActivityIndicatorAnimationCircleStrokeSpin.swift */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		016D517C218D9E3A00A28DC0 /* KActivityIndicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				016D517D218D9E3A00A28DC0 /* KActivityIndicatorView.swift */,
+				016D517E218D9E3A00A28DC0 /* KActivityIndicatorType.swift */,
+				016D517F218D9E3A00A28DC0 /* KActivityIndicatorShape.swift */,
+				016D5180218D9E3A00A28DC0 /* FadeInOutAnimation.swift */,
+				016D5181218D9E3A00A28DC0 /* KActivityIndicatorAnimationDelegate.swift */,
+			);
+			path = KActivityIndicatorView;
+			sourceTree = "<group>";
+		};
+		016D5182218D9E3A00A28DC0 /* ProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				016D5183218D9E3A00A28DC0 /* ProgressView.swift */,
+			);
+			path = ProgressView;
+			sourceTree = "<group>";
+		};
+		016D51B4218DB41600A28DC0 /* Branch */ = {
+			isa = PBXGroup;
+			children = (
+				016D51C1218DB43300A28DC0 /* Cell */,
+				016D51B5218DB42700A28DC0 /* BranchPresenter.swift */,
+				016D51B6218DB42700A28DC0 /* BranchRouter.swift */,
+				016D51B7218DB42700A28DC0 /* BranchViewController.swift */,
+				016D51B8218DB42700A28DC0 /* BranchProtocols.swift */,
+				016D51B9218DB42700A28DC0 /* BranchInteractor.swift */,
+				016D51BA218DB42700A28DC0 /* BranchViewController.xib */,
+			);
+			path = Branch;
+			sourceTree = "<group>";
+		};
+		016D51C1218DB43300A28DC0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				016D51C2218DB44400A28DC0 /* BranchCell.swift */,
+				016D51C3218DB44400A28DC0 /* BranchCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		018560A7218B2AD3006460B9 /* TabbarMainViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -243,12 +460,11 @@
 		01CA07CD2170437E005B1BC9 /* BaseIOS2018 */ = {
 			isa = PBXGroup;
 			children = (
+				016D50F9218D9C1600A28DC0 /* SupportFile */,
 				01CA083021704810005B1BC9 /* Components */,
 				01CA082F21704801005B1BC9 /* Modules */,
 				01CA082C21704767005B1BC9 /* Entities */,
 				01CA07FB21704668005B1BC9 /* Services */,
-				01CA07CE2170437E005B1BC9 /* AppDelegate.swift */,
-				01617DB1218D77ED00CEBCFF /* GoogleService-Info.plist */,
 				01CA07D521704382005B1BC9 /* Assets.xcassets */,
 				01CA07D721704382005B1BC9 /* LaunchScreen.storyboard */,
 				01CA07DA21704382005B1BC9 /* Info.plist */,
@@ -351,6 +567,8 @@
 		01CA082F21704801005B1BC9 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				016D51B4218DB41600A28DC0 /* Branch */,
+				CBB7F59A218D8A6A0092B2F4 /* SelectPhotoViewController */,
 				CBB7F57A218D75F30092B2F4 /* SignIn */,
 				018560D4218B2F61006460B9 /* DetailProduct */,
 				018560D3218B2F5A006460B9 /* AddProduct */,
@@ -368,23 +586,18 @@
 				01CA08352170486D005B1BC9 /* Extensions */,
 				01CA08342170485D005B1BC9 /* Constants */,
 				01CA083321704857005B1BC9 /* Helpers */,
-				01CA08312170483F005B1BC9 /* Fonts */,
 			);
 			path = Components;
-			sourceTree = "<group>";
-		};
-		01CA08312170483F005B1BC9 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Fonts;
 			sourceTree = "<group>";
 		};
 		01CA083321704857005B1BC9 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				CBB7F5A0218D8C5A0092B2F4 /* Utils.swift */,
 				01CA085521705268005B1BC9 /* LanguageHelper.swift */,
 				01617DB3218D7BF800CEBCFF /* DBFirebaseHelper.swift */,
+				016D51AB218DA2F500A28DC0 /* PopUpHelper.swift */,
+				016D51B2218DB2F600A28DC0 /* Connectivity.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -413,6 +626,7 @@
 				01CA084B21704CDE005B1BC9 /* UIButton+extension.swift */,
 				01CA084D21704CFC005B1BC9 /* Int+extension.swift */,
 				01CA08532170516E005B1BC9 /* Bundle+extension.swift */,
+				016D50FC218D9C8900A28DC0 /* Window+extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -462,10 +676,47 @@
 		CBB7F591218D78270092B2F4 /* ViewCustom */ = {
 			isa = PBXGroup;
 			children = (
+				016D5159218D9E3A00A28DC0 /* Indicator */,
+				CBB7F597218D8A060092B2F4 /* Popup */,
+				CBB7F596218D89F30092B2F4 /* TextFeild */,
+			);
+			path = ViewCustom;
+			sourceTree = "<group>";
+		};
+		CBB7F596218D89F30092B2F4 /* TextFeild */ = {
+			isa = PBXGroup;
+			children = (
 				CBB7F592218D78390092B2F4 /* TextFieldNewStyleView.swift */,
 				CBB7F593218D78390092B2F4 /* TextFieldNewStyleView.xib */,
 			);
-			path = ViewCustom;
+			path = TextFeild;
+			sourceTree = "<group>";
+		};
+		CBB7F597218D8A060092B2F4 /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				CBB7F598218D8A610092B2F4 /* NCSChoosePhotoPopUp.swift */,
+				016D51AE218DAAE200A28DC0 /* NCSBasePopUpView.swift */,
+				016D51B0218DAB5400A28DC0 /* AppChooseDatePopUpView.swift */,
+			);
+			path = Popup;
+			sourceTree = "<group>";
+		};
+		CBB7F59A218D8A6A0092B2F4 /* SelectPhotoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CBB7F59B218D8A6A0092B2F4 /* Cell */,
+				CBB7F59D218D8A6A0092B2F4 /* SelectPhotoViewController.swift */,
+			);
+			path = SelectPhotoViewController;
+			sourceTree = "<group>";
+		};
+		CBB7F59B218D8A6A0092B2F4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CBB7F59C218D8A6A0092B2F4 /* SelectPhotoCollectionViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -532,7 +783,9 @@
 			files = (
 				CBB7F595218D78390092B2F4 /* TextFieldNewStyleView.xib in Resources */,
 				01CA07D921704382005B1BC9 /* LaunchScreen.storyboard in Resources */,
+				016D51C0218DB42700A28DC0 /* BranchViewController.xib in Resources */,
 				01CA07D621704382005B1BC9 /* Assets.xcassets in Resources */,
+				016D51C5218DB44400A28DC0 /* BranchCell.xib in Resources */,
 				CBB7F589218D77360092B2F4 /* SignInViewController.xib in Resources */,
 				018560C5218B2EA8006460B9 /* HomeViewController.xib in Resources */,
 				018560F5218B3173006460B9 /* ProductCell.xib in Resources */,
@@ -600,13 +853,9 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 			);
 			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -621,63 +870,118 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				016D519E218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallZigZag.swift in Sources */,
 				018560DD218B2F77006460B9 /* DetailProductViewController.swift in Sources */,
 				01CA083A21704A6D005B1BC9 /* UIView+extension.swift in Sources */,
 				01CA085021704D16005B1BC9 /* BaseView.swift in Sources */,
 				01CA081A21704668005B1BC9 /* BaseResponse.swift in Sources */,
+				016D518E218D9E3A00A28DC0 /* KActivityIndicatorAnimationLineSpinFadeLoader.swift in Sources */,
+				016D51BB218DB42700A28DC0 /* BranchPresenter.swift in Sources */,
 				01CA08542170516E005B1BC9 /* Bundle+extension.swift in Sources */,
+				016D519B218D9E3A00A28DC0 /* KActivityIndicatorAnimationSquareSpin.swift in Sources */,
 				01CA084621704B5B005B1BC9 /* UIViewController+extension.swift in Sources */,
 				CBB7F582218D76100092B2F4 /* SignInRouter.swift in Sources */,
+				CBB7F599218D8A610092B2F4 /* NCSChoosePhotoPopUp.swift in Sources */,
+				016D519A218D9E3A00A28DC0 /* KActivityIndicatorAnimationLineScalePulseOutRapid.swift in Sources */,
+				016D5196218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallScaleRippleMultiple.swift in Sources */,
 				018560E8218B2F8B006460B9 /* AddProductRouter.swift in Sources */,
 				CBB7F585218D76100092B2F4 /* SignInInteractor.swift in Sources */,
 				01CA084021704AF0005B1BC9 /* UICollectionView+extension.swift in Sources */,
 				CBB7F58A218D77360092B2F4 /* SignInViewController.swift in Sources */,
 				018560EA218B2F8B006460B9 /* AddProductProtocols.swift in Sources */,
 				01CA085221704D68005B1BC9 /* BaseViewController.swift in Sources */,
+				016D51A1218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallClipRotatePulse.swift in Sources */,
 				018560EB218B2F8B006460B9 /* AddProductInteractor.swift in Sources */,
+				016D5193218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallZigZagDeflect.swift in Sources */,
 				01CA083E21704AD8005B1BC9 /* UITableView+extension.swift in Sources */,
 				018560AB218B2B17006460B9 /* AppImage.swift in Sources */,
+				016D5189218D9E3A00A28DC0 /* KActivityIndicatorAnimationPacman.swift in Sources */,
 				018560DB218B2F77006460B9 /* DetailProductPresenter.swift in Sources */,
 				01CA084C21704CDE005B1BC9 /* UIButton+extension.swift in Sources */,
+				016D5199218D9E3A00A28DC0 /* KActivityIndicatorAnimationLineScaleParty.swift in Sources */,
 				018560E7218B2F8B006460B9 /* AddProductPresenter.swift in Sources */,
+				016D5195218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallTrianglePath.swift in Sources */,
+				016D5190218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallPulse.swift in Sources */,
 				01CA081C21704668005B1BC9 /* MapperData.swift in Sources */,
 				018560C2218B2EA8006460B9 /* HomeViewController.swift in Sources */,
 				018560EF218B30FB006460B9 /* BaseTableCell.swift in Sources */,
+				016D51A7218D9E3A00A28DC0 /* KActivityIndicatorShape.swift in Sources */,
+				016D51BD218DB42700A28DC0 /* BranchViewController.swift in Sources */,
 				01CA07CF2170437E005B1BC9 /* AppDelegate.swift in Sources */,
 				01CA084821704BBB005B1BC9 /* Date+extension.swift in Sources */,
 				018560DC218B2F77006460B9 /* DetailProductRouter.swift in Sources */,
+				016D5185218D9E3A00A28DC0 /* KActivityIndicatorAnimationOrbit.swift in Sources */,
 				01617DB4218D7BF800CEBCFF /* DBFirebaseHelper.swift in Sources */,
+				016D518A218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallRotateChase.swift in Sources */,
+				016D51B3218DB2F600A28DC0 /* Connectivity.swift in Sources */,
+				016D519F218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallPulseSync.swift in Sources */,
+				016D51A5218D9E3A00A28DC0 /* KActivityIndicatorView.swift in Sources */,
+				016D5197218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallSpinFadeLoader.swift in Sources */,
+				016D5192218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallClipRotateMultiple.swift in Sources */,
+				016D518F218D9E3A00A28DC0 /* KActivityIndicatorAnimationLineScalePulseOut.swift in Sources */,
+				016D519C218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallBeat.swift in Sources */,
 				01CA081E21704668005B1BC9 /* RatingUserParam.swift in Sources */,
 				01CA081B21704668005B1BC9 /* Network.swift in Sources */,
 				018560C0218B2EA8006460B9 /* HomePresenter.swift in Sources */,
+				016D51A8218D9E3A00A28DC0 /* FadeInOutAnimation.swift in Sources */,
+				016D518B218D9E3A00A28DC0 /* KActivityIndicatorAnimationSemiCircleSpin.swift in Sources */,
 				CBB7F584218D76100092B2F4 /* SignInProtocols.swift in Sources */,
+				016D5188218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallGridPulse.swift in Sources */,
+				CBB7F5A1218D8C5A0092B2F4 /* Utils.swift in Sources */,
+				016D51BF218DB42700A28DC0 /* BranchInteractor.swift in Sources */,
 				CBB7F594218D78390092B2F4 /* TextFieldNewStyleView.swift in Sources */,
+				016D518C218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallScale.swift in Sources */,
 				018560E9218B2F8B006460B9 /* AddProductViewController.swift in Sources */,
+				016D51AA218D9E3A00A28DC0 /* ProgressView.swift in Sources */,
+				016D51BE218DB42700A28DC0 /* BranchProtocols.swift in Sources */,
 				018560F4218B3173006460B9 /* ProductCell.swift in Sources */,
+				CBB7F59E218D8A6B0092B2F4 /* SelectPhotoCollectionViewCell.swift in Sources */,
 				018560DF218B2F77006460B9 /* DetailProductInteractor.swift in Sources */,
+				016D51A2218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallPulseRise.swift in Sources */,
 				01CA084A21704C93005B1BC9 /* String+extension.swift in Sources */,
 				01CA084221704B12005B1BC9 /* UIDevice+extension.swift in Sources */,
+				016D51A4218D9E3A00A28DC0 /* KActivityIndicatorAnimationCircleStrokeSpin.swift in Sources */,
 				01CA082321704668005B1BC9 /* BaseParam.swift in Sources */,
 				01617DB8218D8BE200CEBCFF /* ProductEntity.swift in Sources */,
+				016D51A6218D9E3A00A28DC0 /* KActivityIndicatorType.swift in Sources */,
+				016D5198218D9E3A00A28DC0 /* KActivityIndicatorAnimationLineScale.swift in Sources */,
 				018560A9218B2AE0006460B9 /* TabbarMainViewController.swift in Sources */,
 				018560DE218B2F77006460B9 /* DetailProductProtocols.swift in Sources */,
+				016D51AC218DA2F500A28DC0 /* PopUpHelper.swift in Sources */,
 				018560C4218B2EA8006460B9 /* HomeInteractor.swift in Sources */,
+				016D519D218D9E3A00A28DC0 /* KActivityIndicatorAnimationCubeTransition.swift in Sources */,
 				CBB7F581218D76100092B2F4 /* SignInPresenter.swift in Sources */,
+				016D51A3218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallRotate.swift in Sources */,
 				018560C1218B2EA8006460B9 /* HomeRouter.swift in Sources */,
+				016D51A0218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallScaleMultiple.swift in Sources */,
+				016D5191218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallClipRotate.swift in Sources */,
 				01CA083C21704AB9005B1BC9 /* UIColor+extension.swift in Sources */,
 				01CA082621704668005B1BC9 /* EndPointType.swift in Sources */,
 				01CA083821704A47005B1BC9 /* BaseViewXib.swift in Sources */,
+				016D50FD218D9C8900A28DC0 /* Window+extension.swift in Sources */,
+				016D51A9218D9E3A00A28DC0 /* KActivityIndicatorAnimationDelegate.swift in Sources */,
+				016D5187218D9E3A00A28DC0 /* KActivityIndicatorAnimationTriangleSkewSpin.swift in Sources */,
 				01CA082A21704668005B1BC9 /* Provider.swift in Sources */,
 				01CA081D21704668005B1BC9 /* NetworkRequest.swift in Sources */,
+				016D5194218D9E3A00A28DC0 /* KActivityIndicatorAnimationBlank.swift in Sources */,
 				01CA084421704B3B005B1BC9 /* UIImage+extension.swift in Sources */,
 				01617DB6218D879500CEBCFF /* BranchEntity.swift in Sources */,
 				01CA085621705268005B1BC9 /* LanguageHelper.swift in Sources */,
+				016D5184218D9E3A00A28DC0 /* KActivityIndicatorAnimationAudioEqualizer.swift in Sources */,
 				018560F1218B3125006460B9 /* AppColor.swift in Sources */,
 				01CA081921704668005B1BC9 /* APIError.swift in Sources */,
+				016D51C4218DB44400A28DC0 /* BranchCell.swift in Sources */,
+				016D50FB218D9C2900A28DC0 /* RouterService.swift in Sources */,
 				01CA082721704668005B1BC9 /* UserEndPoint.swift in Sources */,
 				018560C3218B2EA8006460B9 /* HomeProtocols.swift in Sources */,
 				01CA084E21704CFC005B1BC9 /* Int+extension.swift in Sources */,
+				016D518D218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallScaleRipple.swift in Sources */,
+				CBB7F59F218D8A6B0092B2F4 /* SelectPhotoViewController.swift in Sources */,
 				01CA082E21704791005B1BC9 /* BaseEntity.swift in Sources */,
+				016D51AF218DAAE200A28DC0 /* NCSBasePopUpView.swift in Sources */,
+				016D51B1218DAB5400A28DC0 /* AppChooseDatePopUpView.swift in Sources */,
+				016D5186218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallGridBeat.swift in Sources */,
+				016D51BC218DB42700A28DC0 /* BranchRouter.swift in Sources */,
 				01CA082B21704668005B1BC9 /* UserAPIService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
