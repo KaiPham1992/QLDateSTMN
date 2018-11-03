@@ -63,6 +63,14 @@
 		01CA08542170516E005B1BC9 /* Bundle+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CA08532170516E005B1BC9 /* Bundle+extension.swift */; };
 		01CA085621705268005B1BC9 /* LanguageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CA085521705268005B1BC9 /* LanguageHelper.swift */; };
 		C5C5B84610885157C8E022FC /* Pods_BaseIOS2018.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF21F2666257CA7E4665EC07 /* Pods_BaseIOS2018.framework */; };
+		CBB7F581218D76100092B2F4 /* SignInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB7F57B218D76100092B2F4 /* SignInPresenter.swift */; };
+		CBB7F582218D76100092B2F4 /* SignInRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB7F57C218D76100092B2F4 /* SignInRouter.swift */; };
+		CBB7F584218D76100092B2F4 /* SignInProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB7F57E218D76100092B2F4 /* SignInProtocols.swift */; };
+		CBB7F585218D76100092B2F4 /* SignInInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB7F57F218D76100092B2F4 /* SignInInteractor.swift */; };
+		CBB7F589218D77360092B2F4 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBB7F587218D77350092B2F4 /* SignInViewController.xib */; };
+		CBB7F58A218D77360092B2F4 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB7F588218D77360092B2F4 /* SignInViewController.swift */; };
+		CBB7F594218D78390092B2F4 /* TextFieldNewStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB7F592218D78390092B2F4 /* TextFieldNewStyleView.swift */; };
+		CBB7F595218D78390092B2F4 /* TextFieldNewStyleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBB7F593218D78390092B2F4 /* TextFieldNewStyleView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -126,6 +134,14 @@
 		01CA0859217056AC005B1BC9 /* BaseIOS2018-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BaseIOS2018-Bridging-Header.h"; sourceTree = "<group>"; };
 		27EE19A70C6F19A526174283 /* Pods-BaseIOS2018.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseIOS2018.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseIOS2018/Pods-BaseIOS2018.release.xcconfig"; sourceTree = "<group>"; };
 		3033B2F4A867E93E3D01C046 /* Pods-BaseIOS2018.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseIOS2018.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseIOS2018/Pods-BaseIOS2018.debug.xcconfig"; sourceTree = "<group>"; };
+		CBB7F57B218D76100092B2F4 /* SignInPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPresenter.swift; sourceTree = "<group>"; };
+		CBB7F57C218D76100092B2F4 /* SignInRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRouter.swift; sourceTree = "<group>"; };
+		CBB7F57E218D76100092B2F4 /* SignInProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInProtocols.swift; sourceTree = "<group>"; };
+		CBB7F57F218D76100092B2F4 /* SignInInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInInteractor.swift; sourceTree = "<group>"; };
+		CBB7F587218D77350092B2F4 /* SignInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		CBB7F588218D77360092B2F4 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		CBB7F592218D78390092B2F4 /* TextFieldNewStyleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldNewStyleView.swift; sourceTree = "<group>"; };
+		CBB7F593218D78390092B2F4 /* TextFieldNewStyleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextFieldNewStyleView.xib; sourceTree = "<group>"; };
 		CF21F2666257CA7E4665EC07 /* Pods_BaseIOS2018.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseIOS2018.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -324,6 +340,7 @@
 		01CA082F21704801005B1BC9 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CBB7F57A218D75F30092B2F4 /* SignIn */,
 				018560D4218B2F61006460B9 /* DetailProduct */,
 				018560D3218B2F5A006460B9 /* AddProduct */,
 				018560B9218B2E87006460B9 /* Home */,
@@ -335,11 +352,11 @@
 		01CA083021704810005B1BC9 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				CBB7F591218D78270092B2F4 /* ViewCustom */,
 				01CA083621704A20005B1BC9 /* Base */,
 				01CA08352170486D005B1BC9 /* Extensions */,
 				01CA08342170485D005B1BC9 /* Constants */,
 				01CA083321704857005B1BC9 /* Helpers */,
-				01CA083221704847005B1BC9 /* CustomViews */,
 				01CA08312170483F005B1BC9 /* Fonts */,
 			);
 			path = Components;
@@ -350,13 +367,6 @@
 			children = (
 			);
 			path = Fonts;
-			sourceTree = "<group>";
-		};
-		01CA083221704847005B1BC9 /* CustomViews */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CustomViews;
 			sourceTree = "<group>";
 		};
 		01CA083321704857005B1BC9 /* Helpers */ = {
@@ -424,6 +434,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CBB7F57A218D75F30092B2F4 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				CBB7F57B218D76100092B2F4 /* SignInPresenter.swift */,
+				CBB7F57C218D76100092B2F4 /* SignInRouter.swift */,
+				CBB7F57E218D76100092B2F4 /* SignInProtocols.swift */,
+				CBB7F57F218D76100092B2F4 /* SignInInteractor.swift */,
+				CBB7F588218D77360092B2F4 /* SignInViewController.swift */,
+				CBB7F587218D77350092B2F4 /* SignInViewController.xib */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		CBB7F591218D78270092B2F4 /* ViewCustom */ = {
+			isa = PBXGroup;
+			children = (
+				CBB7F592218D78390092B2F4 /* TextFieldNewStyleView.swift */,
+				CBB7F593218D78390092B2F4 /* TextFieldNewStyleView.xib */,
+			);
+			path = ViewCustom;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -436,7 +468,6 @@
 				01CA07C82170437E005B1BC9 /* Frameworks */,
 				01CA07C92170437E005B1BC9 /* Resources */,
 				57138EA3696A38E12B5F5A60 /* [CP] Embed Pods Frameworks */,
-				E17E1B25F357EBE8250111D0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -486,8 +517,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBB7F595218D78390092B2F4 /* TextFieldNewStyleView.xib in Resources */,
 				01CA07D921704382005B1BC9 /* LaunchScreen.storyboard in Resources */,
 				01CA07D621704382005B1BC9 /* Assets.xcassets in Resources */,
+				CBB7F589218D77360092B2F4 /* SignInViewController.xib in Resources */,
 				018560C5218B2EA8006460B9 /* HomeViewController.xib in Resources */,
 				018560F5218B3173006460B9 /* ProductCell.xib in Resources */,
 				018560EC218B2F8B006460B9 /* AddProductViewController.xib in Resources */,
@@ -540,21 +573,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E17E1B25F357EBE8250111D0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BaseIOS2018/Pods-BaseIOS2018-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -568,8 +586,11 @@
 				01CA081A21704668005B1BC9 /* BaseResponse.swift in Sources */,
 				01CA08542170516E005B1BC9 /* Bundle+extension.swift in Sources */,
 				01CA084621704B5B005B1BC9 /* UIViewController+extension.swift in Sources */,
+				CBB7F582218D76100092B2F4 /* SignInRouter.swift in Sources */,
 				018560E8218B2F8B006460B9 /* AddProductRouter.swift in Sources */,
+				CBB7F585218D76100092B2F4 /* SignInInteractor.swift in Sources */,
 				01CA084021704AF0005B1BC9 /* UICollectionView+extension.swift in Sources */,
+				CBB7F58A218D77360092B2F4 /* SignInViewController.swift in Sources */,
 				018560EA218B2F8B006460B9 /* AddProductProtocols.swift in Sources */,
 				01CA085221704D68005B1BC9 /* BaseViewController.swift in Sources */,
 				018560EB218B2F8B006460B9 /* AddProductInteractor.swift in Sources */,
@@ -587,6 +608,8 @@
 				01CA081E21704668005B1BC9 /* RatingUserParam.swift in Sources */,
 				01CA081B21704668005B1BC9 /* Network.swift in Sources */,
 				018560C0218B2EA8006460B9 /* HomePresenter.swift in Sources */,
+				CBB7F584218D76100092B2F4 /* SignInProtocols.swift in Sources */,
+				CBB7F594218D78390092B2F4 /* TextFieldNewStyleView.swift in Sources */,
 				018560E9218B2F8B006460B9 /* AddProductViewController.swift in Sources */,
 				018560F4218B3173006460B9 /* ProductCell.swift in Sources */,
 				018560DF218B2F77006460B9 /* DetailProductInteractor.swift in Sources */,
@@ -596,6 +619,7 @@
 				018560A9218B2AE0006460B9 /* TabbarMainViewController.swift in Sources */,
 				018560DE218B2F77006460B9 /* DetailProductProtocols.swift in Sources */,
 				018560C4218B2EA8006460B9 /* HomeInteractor.swift in Sources */,
+				CBB7F581218D76100092B2F4 /* SignInPresenter.swift in Sources */,
 				018560C1218B2EA8006460B9 /* HomeRouter.swift in Sources */,
 				01CA083C21704AB9005B1BC9 /* UIColor+extension.swift in Sources */,
 				01CA082621704668005B1BC9 /* EndPointType.swift in Sources */,
