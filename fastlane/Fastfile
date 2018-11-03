@@ -32,7 +32,7 @@ desc "Sync certificates for Development"
 desc "=> fastlane sync_cert_dev --env dev"
 lane :sync_cert_dev do
   match(type: "development")
-  match(type: "adhoc")
+  match(type: "enterprise")
 end
 
 desc "Sync certificates for Production"
@@ -114,8 +114,8 @@ lane :deploy_fabric do
     ipa_path: "#{IPA_PATH}",
   )
 
-  #msg = "#{IPA_INFO} has been deployed to Fabric"
-  #noti_slack({message: msg})
+  msg = "#{IPA_INFO} has been deployed to Fabric"
+  noti_slack({message: msg})
 end
 
 desc "Deploy to TestFlight"
