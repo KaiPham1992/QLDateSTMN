@@ -67,6 +67,13 @@ DEPENDENCIES:
   - ObjectMapper
   - SwiftyJSON
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - BarcodeScanner
+    - ObjectMapper
+    - SwiftyJSON
+
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   BarcodeScanner: fce1ad2b3f28286b1ab5091fe0979789618bee27
@@ -84,4 +91,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 8ca96e8b5bb3a6e50d3620a48941db009531b55c
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3
