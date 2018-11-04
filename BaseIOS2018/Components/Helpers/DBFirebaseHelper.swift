@@ -76,6 +76,14 @@ class DBFirebaseHelper: NSObject {
                 _product.expireId = data.key // id is ID date expire
                 listProduct.append(_product)
             }
+            listProduct = listProduct.sorted(by: { _product1, _product2 -> Bool in
+                if let _dateCheck1 = _product1.dateCheck,let _dateCheck2 = _product2.dateCheck {
+                    return _dateCheck1 < _dateCheck2
+                }
+                
+                return true
+                
+            })
             completion(listProduct)
         }
     }

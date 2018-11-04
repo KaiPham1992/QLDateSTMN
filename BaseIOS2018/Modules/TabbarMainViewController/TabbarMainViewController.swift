@@ -19,26 +19,32 @@ class TabbarMainViewController: UITabBarController {
     
     private func setUpTabbar() {
         tabBar.barTintColor = .white
+        tabBar.tintColor = AppColor.main
         //---
         let vcMain = HomeRouter.createModule()
         vcMain.tabBarItem = setBarItem(selectedImage: AppImage.imgHomeOn, normalImage: AppImage.imgHomeOff)
         vcMain.tabBarItem.tag = 1
+        vcMain.title = "Danh Sách"
+        
         let ncMain = UINavigationController(rootViewController: vcMain)
         
         //---
         let vcDetailProduct = DetailProductRouter.createModule()
         vcDetailProduct.tabBarItem = setBarItem(selectedImage: AppImage.imgCartOn, normalImage: AppImage.imgCartOff)
         vcDetailProduct.tabBarItem.tag = 2
+        vcDetailProduct.title = "Chi Tiết"
         
         //---
         let vcAddProduct = AddProductRouter.createModule()
         vcAddProduct.tabBarItem = setBarItem(selectedImage: AppImage.imgListOn, normalImage: AppImage.imgListOff)
         vcAddProduct.tabBarItem.tag = 3
+        vcAddProduct.title = "Thêm SP"
         
         //---
         let vcOrder = UIViewController()
         vcOrder.tabBarItem = setBarItem(selectedImage: AppImage.imgOrderOn, normalImage: AppImage.imgOrderOff)
         vcOrder.tabBarItem.tag = 4
+        vcOrder.title = "QL Tài Khoản"
         
         //---
         self.viewControllers = [ncMain,vcDetailProduct, vcAddProduct, vcOrder]
@@ -46,6 +52,7 @@ class TabbarMainViewController: UITabBarController {
     
     private func setBarItem(selectedImage: UIImage?, normalImage: UIImage?) -> UITabBarItem {
         let item = UITabBarItem(title: nil, image: normalImage, selectedImage: selectedImage)
+        
         return item
     }
     
