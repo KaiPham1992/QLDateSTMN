@@ -15,6 +15,8 @@ class ProductEntity: BaseEntity {
     var dateExpire: UInt64?
     var image: String?
     
+    var expireId: String?
+    
     override func mapping(map: Map) {
         super.mapping(map: map)
         self.name <- map["name"]

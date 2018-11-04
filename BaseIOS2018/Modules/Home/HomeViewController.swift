@@ -11,14 +11,21 @@
 import UIKit
 
 class HomeViewController: BaseViewController, HomeViewProtocol {
-
+    
 	var presenter: HomePresenterProtocol?
     @IBOutlet weak var tbHome: UITableView!
+    
+    var listProduct = [ProductEntity]() {
+        didSet {
+            tbHome.reloadData()
+        }
+    }
 
 	override func viewDidLoad() {
         super.viewDidLoad()
         configureTable()
         setTitleNavigation(title: "Hàng Sắp Hết Hạn")
+        presenter?.viewDidLoad()
     }
 }
 
@@ -34,12 +41,20 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return listProduct.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tbHome.dequeue(ProductCell.self, for: indexPath)
-        
+        cell.product = listProduct[indexPath.item]
+        cell.lbOrder.text = "\(indexPath.item + 1)"
         return cell
+    }
+}
+
+// MARK: receive data
+extension HomeViewController {
+    func didGetProductNeedCheck(listProduct: [ProductEntity]) {
+        self.listProduct = listProduct
     }
 }

@@ -29,7 +29,6 @@ class TabbarMainViewController: UITabBarController {
         let vcDetailProduct = DetailProductRouter.createModule()
         vcDetailProduct.tabBarItem = setBarItem(selectedImage: AppImage.imgCartOn, normalImage: AppImage.imgCartOff)
         vcDetailProduct.tabBarItem.tag = 2
-        vcDetailProduct.view.backgroundColor = .red
         
         //---
         let vcAddProduct = AddProductRouter.createModule()
@@ -40,7 +39,6 @@ class TabbarMainViewController: UITabBarController {
         let vcOrder = UIViewController()
         vcOrder.tabBarItem = setBarItem(selectedImage: AppImage.imgOrderOn, normalImage: AppImage.imgOrderOff)
         vcOrder.tabBarItem.tag = 4
-        vcOrder.view.backgroundColor = .yellow
         
         //---
         self.viewControllers = [ncMain,vcDetailProduct, vcAddProduct, vcOrder]

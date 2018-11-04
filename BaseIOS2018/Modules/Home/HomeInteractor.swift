@@ -11,6 +11,14 @@
 import UIKit
 
 class HomeInteractor: HomeInteractorInputProtocol {
+    func getAllProductNeedCheck() {
+        DBFirebaseHelper.shared.getProductNeedCheck(completion: { list in
+            if let listProduct = list as? [ProductEntity] {
+                self.presenter?.didGetProductNeedCheck(listProduct: listProduct)
+            }
+        })
+       
+    }
 
     weak var presenter: HomeInteractorOutputProtocol?
 }

@@ -11,6 +11,13 @@
 import UIKit
 
 class DetailProductPresenter: DetailProductPresenterProtocol, DetailProductInteractorOutputProtocol {
+    func didGetDetail(listProduct: [ProductEntity]) {
+        view?.didGetDetail(listProduct: listProduct)
+    }
+    
+    func getDetail(barCode: String) {
+        interactor?.getDetail(barCode: barCode)
+    }
 
     weak private var view: DetailProductViewProtocol?
     var interactor: DetailProductInteractorInputProtocol?

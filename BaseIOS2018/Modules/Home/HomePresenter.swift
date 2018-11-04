@@ -11,6 +11,14 @@
 import UIKit
 
 class HomePresenter: HomePresenterProtocol, HomeInteractorOutputProtocol {
+    func didGetProductNeedCheck(listProduct: [ProductEntity]) {
+        view?.didGetProductNeedCheck(listProduct: listProduct)
+    }
+    
+    func viewDidLoad() {
+        interactor?.getAllProductNeedCheck()
+    }
+    
 
     weak private var view: HomeViewProtocol?
     var interactor: HomeInteractorInputProtocol?

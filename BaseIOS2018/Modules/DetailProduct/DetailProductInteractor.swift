@@ -11,6 +11,14 @@
 import UIKit
 
 class DetailProductInteractor: DetailProductInteractorInputProtocol {
+    func getDetail(barCode: String) {
+        DBFirebaseHelper.shared.getDetailProduct(id: barCode) { listProduct in
+            if let _listProduct = listProduct as? [ProductEntity] {
+                 self.presenter?.didGetDetail(listProduct: _listProduct)
+            }
+        }
+    }
+    
 
     weak var presenter: DetailProductInteractorOutputProtocol?
 }

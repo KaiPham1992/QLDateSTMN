@@ -14,7 +14,7 @@ enum AppDateFormat: String {
     case ddMMMyyyySpacehhmma        = "dd MMM yyyy hh:mm a"
     case ddMMyyyyhhmmma             = "dd MM yyyy hh:mm"
     case ddMMMyyyy                  = "dd MMM yyyy"
-    case ddMMyyyy                   = "dd MM yyyy"
+    case ddMMyyyy                   = "dd/ MM/ yyyy"
     case MMyyyy                     = "MM yyyy"
     case MMMMyyyy                   = "MMMM yyyy"
     case hhmma                      =  "hh:mm a"

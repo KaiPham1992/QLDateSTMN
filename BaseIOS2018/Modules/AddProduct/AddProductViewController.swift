@@ -15,7 +15,7 @@ class AddProductViewController: UIViewController, AddProductViewProtocol {
     @IBOutlet weak var lbProductCode: UILabel!
     @IBOutlet weak var tfProductCode: UITextField!
     @IBOutlet weak var lbProductName: UILabel!
-    @IBOutlet weak var tfProductName:UITextField!
+    @IBOutlet weak var tfProductName: UITextField!
     @IBOutlet weak var lbAddImage: UILabel!
     @IBOutlet weak var imgProduct: UIImageView!
     @IBOutlet weak var btnAddImage: UIButton!
@@ -58,7 +58,7 @@ class AddProductViewController: UIViewController, AddProductViewProtocol {
     }
     
     @IBAction func btnAddProductTapped() {
-        let product = ProductEntity(id: "123456", name: "Vinamilk", dateCheck: Date().secondsSince1970, dateExpire: Date().secondsSince1970)
+        let product = ProductEntity(id: "12345", name: "Sữa vinamilk" , dateCheck: Date().secondsSince1970, dateExpire: Date().secondsSince1970)
         
         presenter?.btnAddTapped(product: product)
     }

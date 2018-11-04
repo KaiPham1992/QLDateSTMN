@@ -18,12 +18,15 @@ protocol DetailProductWireframeProtocol: class {
 protocol DetailProductPresenterProtocol: class {
 
     var interactor: DetailProductInteractorInputProtocol? { get set }
+    func getDetail(barCode: String)
 }
 
 //MARK: Interactor -
 protocol DetailProductInteractorOutputProtocol: class {
 
     /* Interactor -> Presenter */
+    func didGetDetail(listProduct: [ProductEntity])
+    
 }
 
 protocol DetailProductInteractorInputProtocol: class {
@@ -31,6 +34,7 @@ protocol DetailProductInteractorInputProtocol: class {
     var presenter: DetailProductInteractorOutputProtocol?  { get set }
 
     /* Presenter -> Interactor */
+    func getDetail(barCode: String)
 }
 
 //MARK: View -
@@ -39,4 +43,5 @@ protocol DetailProductViewProtocol: class {
     var presenter: DetailProductPresenterProtocol?  { get set }
 
     /* Presenter -> ViewController */
+     func didGetDetail(listProduct: [ProductEntity])
 }

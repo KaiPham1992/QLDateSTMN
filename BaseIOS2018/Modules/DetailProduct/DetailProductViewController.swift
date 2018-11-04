@@ -12,12 +12,20 @@ import UIKit
 import BarcodeScanner
 
 class DetailProductViewController: UIViewController, DetailProductViewProtocol {
-
+   
 	var presenter: DetailProductPresenterProtocol?
     @IBOutlet weak var tfBarcode: UITextField!
+    @IBOutlet weak var tbProduct: UITableView!
+    
+    var listProduct = [ProductEntity]() {
+        didSet {
+            tbProduct.reloadData()
+        }
+    }
 
 	override func viewDidLoad() {
         super.viewDidLoad()
+        configureTable()
     }
     
     @IBAction  func btnBarCodeTapped() {
@@ -33,12 +41,50 @@ class DetailProductViewController: UIViewController, DetailProductViewProtocol {
         viewController.dismissalDelegate = self
         return viewController
     }
+    
+    @IBAction func btnDetailTapped() {
+        if tfBarcode.text&.isEmpty {
+            PopUpHelper.shared.showMessage(message: "Nhập mã vạch sản phẩm")
+        } else {
+            listProduct = []
+            presenter?.getDetail(barCode: tfBarcode.text&)
+        }
+        
+    }
 
+}
+
+extension DetailProductViewController: UITableViewDelegate, UITableViewDataSource {
+    func configureTable() {
+        tbProduct.registerXibFile(ProductCell.self)
+        tbProduct.delegate = self
+        tbProduct.dataSource = self
+        tbProduct.separatorStyle = .none
+        
+        tbProduct.estimatedRowHeight = 150
+        tbProduct.rowHeight = UITableViewAutomaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return listProduct.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tbProduct.dequeue(ProductCell.self, for: indexPath)
+        cell.product = listProduct[indexPath.item]
+        cell.lbOrder.text = "\(indexPath.item + 1)"
+        return cell
+    }
+}
+
+extension DetailProductViewController {
+    func didGetDetail(listProduct: [ProductEntity]) {
+        self.listProduct = listProduct
+    }
 }
 
 
 // MARK: - BarcodeScannerCodeDelegate
-
 extension DetailProductViewController: BarcodeScannerCodeDelegate {
     func scanner(_ controller: BarcodeScannerViewController, didCaptureCode code: String, type: String) {
         print("Barcode Data: \(code)")

@@ -18,12 +18,14 @@ protocol HomeWireframeProtocol: class {
 protocol HomePresenterProtocol: class {
 
     var interactor: HomeInteractorInputProtocol? { get set }
+    func viewDidLoad()
 }
 
 //MARK: Interactor -
 protocol HomeInteractorOutputProtocol: class {
 
     /* Interactor -> Presenter */
+    func didGetProductNeedCheck(listProduct: [ProductEntity])
 }
 
 protocol HomeInteractorInputProtocol: class {
@@ -31,6 +33,7 @@ protocol HomeInteractorInputProtocol: class {
     var presenter: HomeInteractorOutputProtocol?  { get set }
 
     /* Presenter -> Interactor */
+    func getAllProductNeedCheck()
 }
 
 //MARK: View -
@@ -39,4 +42,5 @@ protocol HomeViewProtocol: class {
     var presenter: HomePresenterProtocol?  { get set }
 
     /* Presenter -> ViewController */
+    func didGetProductNeedCheck(listProduct: [ProductEntity])
 }

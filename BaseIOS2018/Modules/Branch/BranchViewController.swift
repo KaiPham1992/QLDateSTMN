@@ -68,7 +68,7 @@ extension BranchViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let message = "Bạn chắc chắn đăng nhập vào \( listBranch[indexPath.item].key&) không?"
+        let message = "Bạn chắc chắn đăng nhập vào siêu thị tại \( listBranch[indexPath.item].name&.uppercased()) không?"
         DBFirebaseHelper.shared.branchMain = listBranch[indexPath.item]
         PopUpHelper.shared.showMessageOKCancel(message: message) {
             RouterService.shared.goToMain()

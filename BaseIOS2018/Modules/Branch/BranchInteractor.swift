@@ -12,12 +12,8 @@ import UIKit
 
 class BranchInteractor: BranchInteractorInputProtocol {
     func getBranch() {
-        DBFirebaseHelper.shared.getAllBranch { list in
-            guard let branchs = list as? [BranchEntity] else { return }
-            self.presenter?.didGetBranch(listBranch: branchs)
-        }
+        self.presenter?.didGetBranch(listBranch: DBFirebaseHelper.shared.listBranch)
     }
     
-
     weak var presenter: BranchInteractorOutputProtocol?
 }

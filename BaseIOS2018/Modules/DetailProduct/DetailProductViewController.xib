@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailProductViewController">
             <connections>
+                <outlet property="tbProduct" destination="vNw-8D-uhK" id="Q9v-KG-XMV"/>
                 <outlet property="tfBarcode" destination="aPp-re-Wu5" id="Da3-95-X6w"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -30,6 +31,9 @@
                                 <constraint firstAttribute="width" constant="40" id="W8c-qN-KfV"/>
                             </constraints>
                             <state key="normal" image="calendar"/>
+                            <connections>
+                                <action selector="btnDetailTapped" destination="-1" eventType="touchUpInside" id="dcv-HB-Eih"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZFv-Xt-wOu">
                             <rect key="frame" x="8" y="22" width="40" height="40"/>
@@ -64,7 +68,7 @@
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vNw-8D-uhK">
                     <rect key="frame" x="0.0" y="70" width="375" height="597"/>
-                    <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
