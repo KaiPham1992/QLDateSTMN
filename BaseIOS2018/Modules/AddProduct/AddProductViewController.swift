@@ -9,6 +9,7 @@
 //
 
 import UIKit
+import BarcodeScanner
 
 class AddProductViewController: UIViewController, AddProductViewProtocol {
 
@@ -20,12 +21,22 @@ class AddProductViewController: UIViewController, AddProductViewProtocol {
     @IBOutlet weak var imgProduct: UIImageView!
     @IBOutlet weak var btnAddImage: UIButton!
     @IBOutlet weak var btnAddProduct: UIButton!
-    @IBOutlet weak var lbEndDay: UILabel!
-    @IBOutlet weak var lbCheckDay: UILabel!
     @IBOutlet weak var lcsHeightImage: NSLayoutConstraint!
+    @IBOutlet weak var btnScanBarcode: UIButton!
+    @IBOutlet weak var lbDateExpire: UILabel!
+    @IBOutlet weak var lbCheckDay: UILabel!
+    @IBOutlet weak var btnAddEndDay: UIButton!
+    @IBOutlet weak var btnAddCheckDay: UIButton!
+    @IBOutlet weak var vDateExpire: UIView!
+    @IBOutlet weak var vCheckDay: UIView!
     
+    
+    let datePopUp = AppChooseDatePopUpView()
 	var presenter: AddProductPresenterProtocol?
-
+    var isCheckEndDate: Bool = false
+    var dateExpire: Date? = nil
+    var dateCheck: Date? = nil
+    
 	override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
@@ -33,10 +44,24 @@ class AddProductViewController: UIViewController, AddProductViewProtocol {
 
     func setupView() {
         //--
-        btnAddImage.setBorder(cornerRadius: 3.3)
+        btnAddImage.setBorder(cornerRadius: 15)
         btnAddProduct.setBorder(cornerRadius: 10)
+        btnAddEndDay.setBorder(borderWidth: 1, borderColor: .white, cornerRadius: 15)
+        btnAddCheckDay.setBorder(borderWidth: 1, borderColor: .white, cornerRadius: 15)
+        //--
+        vDateExpire.setBorder(cornerRadius: 5.5)
+        vCheckDay.setBorder(cornerRadius: 5.5)
         //--
         lcsHeightImage.constant = 0
+        datePopUp.delegate = self
+    }
+    
+    private func makeBarcodeScannerViewController() -> BarcodeScannerViewController {
+        let viewController = BarcodeScannerViewController()
+        viewController.codeDelegate = self
+        viewController.errorDelegate = self
+        viewController.dismissalDelegate = self
+        return viewController
     }
     
     //-- MARK: Action
@@ -58,9 +83,33 @@ class AddProductViewController: UIViewController, AddProductViewProtocol {
     }
     
     @IBAction func btnAddProductTapped() {
-        let product = ProductEntity(id: "123456", name: "Vinamilk", dateCheck: Date().secondsSince1970, dateExpire: Date().secondsSince1970)
         
-        presenter?.btnAddTapped(product: product)
+        if tfProductCode.text != "" && tfProductName.text != "" && lbDateExpire.text != "" && lbCheckDay.text != "" {
+            guard let dateExpire = dateExpire?.secondsSince1970, let dateCheck = dateCheck?.secondsSince1970 else { return }
+            let product = ProductEntity(id: tfProductCode.text!, name: tfProductName.text!, dateCheck: dateExpire, dateExpire: dateCheck)
+            
+            presenter?.btnAddTapped(product: product)
+        } else {
+            let alert = UIAlertController(title: "", message: "Vui lòng điền đầy đủ thông tin", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
+    
+    @IBAction func btnScanBarcodeTapped() {
+        let vcBarCode = makeBarcodeScannerViewController()
+        vcBarCode.title = "Barcode Scanner"
+        present(vcBarCode, animated: true, completion: nil)
+    }
+    
+    @IBAction func btnAddEndDateTapped() {
+        datePopUp.showPopUp()
+        isCheckEndDate = true
+    }
+    
+    @IBAction func btnAddCheckDateTapped() {
+        datePopUp.showPopUp()
+        isCheckEndDate = false
     }
 }
 
@@ -79,5 +128,48 @@ extension AddProductViewController: SelectPhotoViewControllerDelegate {
         imgProduct.image = images
         lcsHeightImage.constant = 100
         imgProduct.layoutIfNeeded()
+    }
+}
+
+extension AddProductViewController: NCSChooseDatePopUpViewDelegate {
+    func selectedDate(date: Date) {
+        if isCheckEndDate {
+            lbDateExpire.text = date.toString(formatString: AppDateFormat.ddMMMyyyy.formatString)
+            self.dateExpire = date
+        } else {
+            lbCheckDay.text = date.toString(formatString: AppDateFormat.ddMMMyyyy.formatString)
+            self.dateCheck = date
+        }
+    }
+}
+
+// MARK: - BarcodeScannerCodeDelegate
+
+extension AddProductViewController: BarcodeScannerCodeDelegate {
+    func scanner(_ controller: BarcodeScannerViewController, didCaptureCode code: String, type: String) {
+        print("Barcode Data: \(code)")
+        print("Symbology Type: \(type)")
+        tfProductCode.text = code
+        controller.dismiss(animated: true, completion: nil)
+        
+        //        DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+        //            controller.resetWithError()
+        //        }
+    }
+}
+
+// MARK: - BarcodeScannerErrorDelegate
+
+extension AddProductViewController: BarcodeScannerErrorDelegate {
+    func scanner(_ controller: BarcodeScannerViewController, didReceiveError error: Error) {
+        print(error)
+    }
+}
+
+// MARK: - BarcodeScannerDismissalDelegate
+
+extension AddProductViewController: BarcodeScannerDismissalDelegate {
+    func scannerDidDismiss(_ controller: BarcodeScannerViewController) {
+        controller.dismiss(animated: true, completion: nil)
     }
 }

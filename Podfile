@@ -7,6 +7,7 @@ def main_pods
   pod 'Alamofire'
   pod 'ObjectMapper'
   pod 'BarcodeScanner'
+  pod 'IQKeyboardManagerSwift'
 
   #Firebase
   pod 'Firebase/Core'

@@ -8,7 +8,7 @@
 
 import UIKit
 import Firebase
-
+import IQKeyboardManagerSwift
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -21,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         
         RouterService.shared.goToSignIn()
+        IQKeyboardManager.shared.enable = true
         return true
     }
 }
