@@ -15,12 +15,14 @@ class ProductCell: BaseTableCell {
     @IBOutlet weak var lbDateCheck: UILabel!
     @IBOutlet weak var lbExpireDate: UILabel!
     @IBOutlet weak var lbOrder: UILabel!
+    @IBOutlet weak var lbUser: UILabel!
     
     var product: ProductEntity? {
         didSet {
             guard let _product = product else { return }
             lbBarcode.text = "Mã vạch: \(_product.id&)"
             lbName.text = _product.name
+            lbUser.text = _product.user
             
             if let dateCheck = _product.dateCheck {
                 let dateNeedCheck = Date(seconds: dateCheck).toString(formatString: AppDateFormat.ddMMyyyy.rawValue)

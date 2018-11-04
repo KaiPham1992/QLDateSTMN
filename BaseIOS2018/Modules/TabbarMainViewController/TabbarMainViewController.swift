@@ -41,7 +41,7 @@ class TabbarMainViewController: UITabBarController {
         vcAddProduct.title = "Thêm SP"
         
         //---
-        let vcOrder = UIViewController()
+        let vcOrder = SignOutRouter.createModule()
         vcOrder.tabBarItem = setBarItem(selectedImage: AppImage.imgOrderOn, normalImage: AppImage.imgOrderOff)
         vcOrder.tabBarItem.tag = 4
         vcOrder.title = "QL Tài Khoản"

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		012B17E6218EB4E2008CD331 /* SignOutPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012B17E0218EB4E2008CD331 /* SignOutPresenter.swift */; };
+		012B17E7218EB4E2008CD331 /* SignOutRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012B17E1218EB4E2008CD331 /* SignOutRouter.swift */; };
+		012B17E8218EB4E2008CD331 /* SignOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012B17E2218EB4E2008CD331 /* SignOutViewController.swift */; };
+		012B17E9218EB4E2008CD331 /* SignOutProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012B17E3218EB4E2008CD331 /* SignOutProtocols.swift */; };
+		012B17EA218EB4E2008CD331 /* SignOutInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012B17E4218EB4E2008CD331 /* SignOutInteractor.swift */; };
+		012B17EB218EB4E2008CD331 /* SignOutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 012B17E5218EB4E2008CD331 /* SignOutViewController.xib */; };
 		01617DB2218D77ED00CEBCFF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01617DB1218D77ED00CEBCFF /* GoogleService-Info.plist */; };
 		01617DB4218D7BF800CEBCFF /* DBFirebaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01617DB3218D7BF800CEBCFF /* DBFirebaseHelper.swift */; };
 		01617DB6218D879500CEBCFF /* BranchEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01617DB5218D879500CEBCFF /* BranchEntity.swift */; };
@@ -135,6 +141,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		012B17E0218EB4E2008CD331 /* SignOutPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutPresenter.swift; sourceTree = "<group>"; };
+		012B17E1218EB4E2008CD331 /* SignOutRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutRouter.swift; sourceTree = "<group>"; };
+		012B17E2218EB4E2008CD331 /* SignOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutViewController.swift; sourceTree = "<group>"; };
+		012B17E3218EB4E2008CD331 /* SignOutProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutProtocols.swift; sourceTree = "<group>"; };
+		012B17E4218EB4E2008CD331 /* SignOutInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutInteractor.swift; sourceTree = "<group>"; };
+		012B17E5218EB4E2008CD331 /* SignOutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignOutViewController.xib; sourceTree = "<group>"; };
 		01617DB1218D77ED00CEBCFF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		01617DB3218D7BF800CEBCFF /* DBFirebaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBFirebaseHelper.swift; sourceTree = "<group>"; };
 		01617DB5218D879500CEBCFF /* BranchEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchEntity.swift; sourceTree = "<group>"; };
@@ -279,6 +291,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		012B17EC218EB4EA008CD331 /* SignOut */ = {
+			isa = PBXGroup;
+			children = (
+				012B17E0218EB4E2008CD331 /* SignOutPresenter.swift */,
+				012B17E1218EB4E2008CD331 /* SignOutRouter.swift */,
+				012B17E2218EB4E2008CD331 /* SignOutViewController.swift */,
+				012B17E3218EB4E2008CD331 /* SignOutProtocols.swift */,
+				012B17E4218EB4E2008CD331 /* SignOutInteractor.swift */,
+				012B17E5218EB4E2008CD331 /* SignOutViewController.xib */,
+			);
+			path = SignOut;
+			sourceTree = "<group>";
+		};
 		016D50F9218D9C1600A28DC0 /* SupportFile */ = {
 			isa = PBXGroup;
 			children = (
@@ -567,6 +592,7 @@
 		01CA082F21704801005B1BC9 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				012B17EC218EB4EA008CD331 /* SignOut */,
 				016D51B4218DB41600A28DC0 /* Branch */,
 				CBB7F59A218D8A6A0092B2F4 /* SelectPhotoViewController */,
 				CBB7F57A218D75F30092B2F4 /* SignIn */,
@@ -787,6 +813,7 @@
 				01CA07D621704382005B1BC9 /* Assets.xcassets in Resources */,
 				016D51C5218DB44400A28DC0 /* BranchCell.xib in Resources */,
 				CBB7F589218D77360092B2F4 /* SignInViewController.xib in Resources */,
+				012B17EB218EB4E2008CD331 /* SignOutViewController.xib in Resources */,
 				018560C5218B2EA8006460B9 /* HomeViewController.xib in Resources */,
 				018560F5218B3173006460B9 /* ProductCell.xib in Resources */,
 				018560EC218B2F8B006460B9 /* AddProductViewController.xib in Resources */,
@@ -876,8 +903,10 @@
 				01CA085021704D16005B1BC9 /* BaseView.swift in Sources */,
 				01CA081A21704668005B1BC9 /* BaseResponse.swift in Sources */,
 				016D518E218D9E3A00A28DC0 /* KActivityIndicatorAnimationLineSpinFadeLoader.swift in Sources */,
+				012B17EA218EB4E2008CD331 /* SignOutInteractor.swift in Sources */,
 				016D51BB218DB42700A28DC0 /* BranchPresenter.swift in Sources */,
 				01CA08542170516E005B1BC9 /* Bundle+extension.swift in Sources */,
+				012B17E9218EB4E2008CD331 /* SignOutProtocols.swift in Sources */,
 				016D519B218D9E3A00A28DC0 /* KActivityIndicatorAnimationSquareSpin.swift in Sources */,
 				01CA084621704B5B005B1BC9 /* UIViewController+extension.swift in Sources */,
 				CBB7F582218D76100092B2F4 /* SignInRouter.swift in Sources */,
@@ -960,6 +989,7 @@
 				01CA083821704A47005B1BC9 /* BaseViewXib.swift in Sources */,
 				016D50FD218D9C8900A28DC0 /* Window+extension.swift in Sources */,
 				016D51A9218D9E3A00A28DC0 /* KActivityIndicatorAnimationDelegate.swift in Sources */,
+				012B17E8218EB4E2008CD331 /* SignOutViewController.swift in Sources */,
 				016D5187218D9E3A00A28DC0 /* KActivityIndicatorAnimationTriangleSkewSpin.swift in Sources */,
 				01CA082A21704668005B1BC9 /* Provider.swift in Sources */,
 				01CA081D21704668005B1BC9 /* NetworkRequest.swift in Sources */,
@@ -976,6 +1006,8 @@
 				018560C3218B2EA8006460B9 /* HomeProtocols.swift in Sources */,
 				01CA084E21704CFC005B1BC9 /* Int+extension.swift in Sources */,
 				016D518D218D9E3A00A28DC0 /* KActivityIndicatorAnimationBallScaleRipple.swift in Sources */,
+				012B17E7218EB4E2008CD331 /* SignOutRouter.swift in Sources */,
+				012B17E6218EB4E2008CD331 /* SignOutPresenter.swift in Sources */,
 				CBB7F59F218D8A6B0092B2F4 /* SelectPhotoViewController.swift in Sources */,
 				01CA082E21704791005B1BC9 /* BaseEntity.swift in Sources */,
 				016D51AF218DAAE200A28DC0 /* NCSBasePopUpView.swift in Sources */,

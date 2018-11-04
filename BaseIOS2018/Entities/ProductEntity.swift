@@ -7,10 +7,12 @@
 //
 
 import ObjectMapper
+import FirebaseAuth
 
 class ProductEntity: BaseEntity {
     var id: String?
     var name: String?
+    var user: String?
     var dateCheck: UInt64?
     var dateExpire: UInt64?
     var image: String?
@@ -20,6 +22,7 @@ class ProductEntity: BaseEntity {
     override func mapping(map: Map) {
         super.mapping(map: map)
         self.name <- map["name"]
+        self.user <- map["user"]
         self.dateCheck <- map["date_check"]
         self.dateExpire <- map["date_expire"]
     }
@@ -30,5 +33,7 @@ class ProductEntity: BaseEntity {
         self.name = name
         self.dateCheck = dateCheck
         self.dateExpire = dateExpire
+        
+        self.user = Auth.auth().currentUser?.email&
     }
 }
